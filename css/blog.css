@@ -44,13 +44,28 @@
 }
 
 .first-line-list {
+    width: 1000px;
     display: flex;
+}
+
+.first-line-pic img {
+    width: 100%;
 }
 
 .second-line-list {
-    display: flex;
+    width: 1000px;
+    /* display: flex; */
+}
+
+.second-line-pic img {
+    width: 100%;
 }
 
 .third-line-list {
-    display: flex;
+    width: 1000px;
+    /* display: flex; */
+}
+
+.third-line-pic img {
+    width: 100%;
 }
