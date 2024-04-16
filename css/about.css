@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    /* padding-top: 100px; */
+}
+
+/* header那塊 */
+.logo {
+    width: 40px;
+    padding: 5px 0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 固定導覽列在上方 */
+    position: fixed;
+    width: 100%;
+    left: 0;
+    padding-top: 80px;
+    z-index: 10;
+    padding: 0 30px;
+    background-color: #fff;
+}
+
+/*導航列的連結區塊*/
+.nav-selector {
+    display: flex;
+}
+
+/* 導航列的連結區塊裡的a標籤 */
+.nav-selector a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #101010;
+    padding: 15px;
+}
+
+.banner-section {
+    /* 為了title浮起來的文字的父層 */
+    position: relative;
+    height: 100%;
+    /* 圖片跑上去的地方往下推 */
+    padding-top: 50px;
+}
+
+/* banner那塊 */
+.banner-title {
+    padding: 30px 0;
+    font-family: "Inter";
+    font-size: 70px;
+    font-weight: 900;
+    color: #F5C173;
+    letter-spacing: 8px;
+    line-height: 1.2;
+    position: absolute;
+    top: 86px;
+    left: 100px;
+    /* 會被圖蓋住 */
+    z-index: 3;
+    /* 想下底線 */
+    /* border-bottom: 2px solid #F5C173; */
+}
+
+.banner-pic {
+    height: 400px;
+}
+
+.banner-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 關於我們介紹的部分 */
+.aboutus {
+    width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.aboutus-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    /* border: 1px solid blue; */
+
+}
+
+.aboutus-title h2 {
+    margin-left: 163px;
+    /* padding: 0 100px; */
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: #F5C173;
+}
+
+.aboutus-txt {
+    margin: 0px 20px;
+}
+
+.aboutus-txt h4 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    /* 阻止文字斷行 */
+    white-space: nowrap;
+    line-height: 1.5;
+    margin-right: 50px;
+
+}
+
+.aboutus-txt p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    /* 阻止文字斷行 */
+    white-space: nowrap;
+    line-height: 1.5;
+    padding: 10px 0;
+}
+
+
+.aboutus-container .aboutus-pic {
+    width: 300px;
+    /* height: 100px; */
+    /* border: 1px solid red; */
+    margin: 5px 20px;
+}
+
+.aboutus-pic img {
+    width: 100%;
+}
+
+
+/* 服務項目的部分 */
+.service-section {
+    background-color: #FCFCE4;
+    padding: 50px 0;
+
+}
+
+.service-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.service-container {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 將子元素水平居中 */
+    text-align: center;
+    /* 讓内部文字居中對齊 */
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+
+}
+
+.service-item {
+    width: 240px;
+    margin: 20px 10px;
+}
+
+.service-pic {
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.service-pic img {
+    width: 100%;
+}
+
+.service-txt {
+    margin: 20px 0;
+}
+
+.service-txt h5 {
+    margin: 20px 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.service-txt p {
+    margin: 20px 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 1.2;
+}
+
+.btn {
+    margin: 20px auto;
+}
+
+.go-product-btn {
+    text-align: center;
+    color: #F5C173;
+    background-color: #fff;
+    /* margin: 20px auto; */
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+}

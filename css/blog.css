@@ -1,0 +1,38 @@
+/* banner那塊 */
+.banner-section {
+    /* 為了slide設的，裡面預設 */
+    position: relative;
+    height: 100%;
+    /* 圖片跑上去的地方往下推 */
+    padding-top: 50px;
+}
+
+.banner-pic {
+    /* 文字定在圖上，他的父層 */
+    position: relative;
+}
+
+/* banner文字標題 */
+.banner-title {
+    padding: 30px 0;
+    font-family: "Inter";
+    font-size: 70px;
+    font-weight: 900;
+    color: #F5C173;
+    letter-spacing: 8px;
+    line-height: 1.2;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* 會被圖蓋住 */
+    z-index: 3;
+}
+
+.banner-pic {
+    height: 400px;
+}
+
+.banner-pic img {
+    width: 100%;
+    height: 100%;
+}

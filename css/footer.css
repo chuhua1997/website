@@ -1,0 +1,108 @@
+/* footer的部分 */
+footer {
+    background-color: #276322;
+}
+
+.footer-logo {
+    width: 50px;
+    margin: 30px 40px;
+
+}
+
+.footer-logo img {
+    width: 100%;
+}
+
+.footer-info {
+    padding: 40px 0;
+    width: 1000px;
+    /* 設立寬度後先使內容在容器中水平居中 */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    color: #fff;
+}
+
+.footer-aboutus {
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+}
+
+.footer-aboutus-title {
+    margin: 10px 10px 5px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+
+.footer-aboutus-item li {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 10px;
+}
+
+
+
+
+.footer-service {
+    margin: 0 40px;
+
+}
+
+.footer-service-title {
+    margin: 10px 10px 5px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+    /* 線跟下面的距離 */
+    padding-bottom: 10px;
+
+}
+
+.footer-service-item {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-service-item-info {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer-service-item-info a {
+    text-decoration: none;
+}
+
+.footer-service-item-info p {
+    margin: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+
+.footer-service-item-buy {
+    display: flex;
+
+}
+
+.footer-service-item-buy a {
+    text-decoration: none;
+}
+
+
+.footer-service-item-buy p {
+    margin: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}

@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+}
+
+html.body {
+    /* 為了slide設的 */
+    position: relative;
+    height: 100%;
+}
+
+/* 字型 */
+body {
+    font-family: "Inter", sans-serif;
+    /* padding-top: 100px; */
+}
+
+/* 最外層可設寬 */
+/*.wrapper {
+    /* max-width: 1200px; 
+}*/
+
+/* 共用文字設定 */
+h2 {
+    font-size: 36px;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+
+/* header那塊 */
+.logo {
+    width: 40px;
+    padding: 5px 0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 固定導覽列在上方 */
+    position: fixed;
+    width: 100%;
+    left: 0;
+    /* padding-top: 80px; */
+    z-index: 10;
+    padding: 0 30px;
+    background-color: #fff;
+}
+
+
+/*導航列的連結區塊*/
+.nav-selector {
+    display: flex;
+}
+
+/* 導航列的連結區塊裡的a標籤 */
+.nav-selector a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #101010;
+    padding: 15px;
+}
+
+/* banner圖文那一塊 */
+.banner-section {
+    /* 為了slide設的，裡面預設 */
+    position: relative;
+    height: 100%;
+    /* 圖片跑上去的地方往下推 */
+    padding-top: 50px;
+}
+
+.banner-pic {
+    /* 文字定在圖上，他的父層 */
+    position: relative;
+}
+
+/* banner文字區塊 */
+
+/* banner文字標題 */
+.banner-title {
+    padding: 30px 0;
+    font-family: "Inter";
+    font-size: 70px;
+    font-weight: 900;
+    color: #F5C173;
+    letter-spacing: 8px;
+    line-height: 1.2;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* 會被圖蓋住 */
+    z-index: 3;
+    /* 想下底線 */
+    /* border-bottom: 2px solid #F5C173; */
+}
+
+/* banner slogan文字 */
+.banner-words {
+    /* 文字定在圖上，子層在這，父層banner-pic */
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 12px;
+    z-index: 3;
+    line-height: 1.2;
+
+}
+
+.banner-words p span {
+    /* color: #fff; */
+    /* 濾鏡反轉顏色 */
+    filter: invert(100%);
+}
+
+/* slide套件原預設 */
+.swiper {
+    width: 60%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.about-container {
+    width: 1000px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.about-list {
+    width: 75%;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-content: center;
+    margin: 100px auto;
+}
+
+.about-txt {
+    flex-basis: 30%;
+    /* 文字區域佔 70% */
+    padding: 0 20px;
+    /* 添加內邊距 */
+    /* 讓about-txt p浮起來的父層 */
+    /* 如果不設在這，會抓不到高度 */
+    position: relative;
+}
+
+
+
+
+.about-txt h2 {
+    font-size: 36px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    margin: 15px 0;
+    color: #F5C173;
+
+}
+
+.about-txt h4 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    /* 阻止文字斷行 */
+    white-space: nowrap;
+    line-height: 1.5;
+}
+
+.about-txt .paragraph {
+    width: 270px;
+    font-size: 14px;
+    /* 浮起來，父層是about-container */
+    position: absolute;
+    top: 200px;
+    right: -100px;
+    padding: 20px;
+    /* border: 2px solid #276322; */
+    background-color: #fff;
+    line-height: 1.2;
+
+}
+
+.about-txt .paragraph p {
+    padding: 10px 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.about-pic {
+    flex-basis: 80%;
+}
+
+.about-pic img {
+    width: 100%;
+}
+
+.photo-wall {
+    display: flex;
+    justify-content: center;
+}
+
+/* 照片牆的部份 */
+
+.photo-wall-title {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    margin: 100px 0 40px 0;
+    color: #276322;
+}
+
+.photogroup {
+    width: 800px;
+    height: 1000px;
+    margin-bottom: 100px;
+    /* border: 3px solid #666; */
+    display: grid;
+    gap: 10px 10px;
+
+
+    grid-template-areas:
+        "a a b b"
+        "c d b b"
+        "e e f f"
+        "e e g h"
+    ;
+}
+
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item1 {
+    /* 放背景圖 */
+    /* ../ 先離開自己的檔案 */
+    /* 跑進/pic檔案裡 */
+    /* 裡面的圖片/檔案.正確的副檔名 */
+    /* background-image: url("../pic/photo-wall-a.png"); */
+    grid-area: a;
+}
+
+.item2 {
+    grid-area: b;
+}
+
+.item3 {
+    grid-area: c;
+}
+
+.item4 {
+    grid-area: d;
+
+}
+
+.item5 {
+    grid-area: e;
+}
+
+.item6 {
+    grid-area: f;
+}
+
+.item7 {
+    grid-area: g;
+}
+
+.item8 {
+    grid-area: h;
+}
+
+
+
+
+
+
+/* slide的套件，要覆蓋的設定 */
+.swiper {
+    margin-right: initial;
+    width: 70%;
+    /* 以視窗放大，超出的遮起來，改圖片不一樣大 */
+    height: 45vw;
+    overflow: hidden;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
+}

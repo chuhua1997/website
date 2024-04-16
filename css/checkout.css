@@ -1,0 +1,58 @@
+.checkout {}
+
+.checkout-title {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+.cart {
+    font-size: 12px;
+    color: #101010;
+}
+
+.checkout-header {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #333;
+}
+
+.ckechout-name,
+.checkout-num,
+.checkout-del,
+.checkout-price {}
+
+
+.checkout-container {}
+
+.checkout-list {
+    /* width: 200px; */
+}
+
+.checkout-card {
+    display: flex;
+    justify-content: center;
+
+}
+
+.checkout-info {}
+
+.checkout-pic img {
+    /* width: 100%; */
+}
+
+
+.checkout-txt {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-zhname {}
+
+.product-enname {}
+
+.number {}
+
+.checkout-price {}
