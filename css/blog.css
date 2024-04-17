@@ -37,16 +37,27 @@
     height: 100%;
 }
 
-/* 圖片那一塊 */
-.blog-photo {
-    display: flex;
-    justify-content: center;
+/* 下面圖片blog部分 */
+.photo-first-section {
+    border: 1px solid red;
+    /* width: 1000px;
+    margin: auto; */
 }
 
 .first-line-list {
-    width: 1000px;
+    height: 800px;
     display: flex;
+    justify-content: center;
+    align-items: stretch;
+    border: 1px solid blue;
 }
+
+.first-line-pic {
+    width: 250px;
+    height: 250px;
+
+}
+
 
 .first-line-pic img {
     width: 100%;
