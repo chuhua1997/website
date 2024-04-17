@@ -49,9 +49,10 @@
 
 /* 下面圖片blog部分 */
 
-/* 共同設定 */
+/* 圖片外框共同設定 */
 .photo-first-container,
-.second-line-container {
+.second-line-container,
+.third-line-container {
     width: 1000px;
     margin: auto;
 }
@@ -66,13 +67,14 @@
 .first-line-pic {
     width: 300px;
     /* 因為圖片不一樣高，所以設固定寬讓圖片都能對齊 */
-    height: 350px;
-    margin: 30px 0;
+    height: 400px;
+    /* margin: 30px 0; */
 }
 
 
 .first-line-pic img,
-.second-line-pic img {
+.second-line-pic img,
+.third-line-pic img {
     /* 讓寬高去符合父層 */
     width: 100%;
     height: 100%;
@@ -80,12 +82,14 @@
 
 /* second二自己設定 */
 /* 用flex-grow練習 */
-.second-line-list {
+.second-line-list,
+.third-line-list {
     /* width: 0; */
     display: flex;
     justify-content: space-between;
-    height: 350px;
+    height: 400px;
     margin: 30px 0;
+
 }
 
 .pic1 {
@@ -95,9 +99,27 @@
 
 .pic2 {
     margin: 0 20px;
-    flex-grow: 2;
+    flex-grow: 3;
 }
 
 .pic3 {
     flex-grow: 1;
+}
+
+/* 第三排圖片自己設定 */
+
+.third-pic1 {
+    flex: 0 0;
+    flex-basis: 450px;
+
+
+}
+
+.third-pic2 {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.third-pic4 {
+    flex-grow: 3;
 }
