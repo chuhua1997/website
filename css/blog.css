@@ -163,6 +163,10 @@
     justify-content: center;
 }
 
+.article-upload-container {
+    padding-top: 20px;
+}
+
 /* 上傳貼文自己畫的外框 */
 .article-upload-border {
     display: flex;
