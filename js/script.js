@@ -5,6 +5,7 @@ var swiper = new Swiper(".mySwiper", {
     keyboard: {
         enabled: true,
     },
+
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
