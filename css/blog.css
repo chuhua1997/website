@@ -35,48 +35,41 @@
 .banner-pic img {
     width: 100%;
     height: 100%;
+
+}
+
+.photo-wall-title {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: #F5C173;
 }
 
 /* 下面圖片blog部分 */
-.photo-first-section {
+.photo-first-container {
     border: 1px solid red;
-    /* width: 1000px;
-    margin: auto; */
+    width: 1000px;
+    margin: auto;
 }
 
 .first-line-list {
-    height: 800px;
     display: flex;
-    justify-content: center;
-    align-items: stretch;
+    justify-content: space-between;
+    /* align-items: stretch; */
     border: 1px solid blue;
 }
 
 .first-line-pic {
-    width: 250px;
-    height: 250px;
-
+    width: 300px;
+    /* 因為圖片不一樣高，所以設固定寬讓圖片都能對齊 */
+    height: 350px;
 }
 
 
 .first-line-pic img {
+    /* 讓寬高去符合父層 */
     width: 100%;
-}
-
-.second-line-list {
-    width: 1000px;
-    /* display: flex; */
-}
-
-.second-line-pic img {
-    width: 100%;
-}
-
-.third-line-list {
-    width: 1000px;
-    /* display: flex; */
-}
-
-.third-line-pic img {
-    width: 100%;
+    height: 100%;
 }
