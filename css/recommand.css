@@ -1,0 +1,14 @@
+/* 修改破題文字顏色 */
+.banner-title {
+    color: #333;
+}
+
+.banner-pic {
+    background-image: url('../pic/destiny-pic.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    width: 700px;
+    margin-right: initial;
+
+}

@@ -59,7 +59,7 @@ h2 {
 /* 導航列的連結區塊裡的a標籤 */
 .nav-selector a {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     color: #101010;
     padding: 15px;
 }
