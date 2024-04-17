@@ -300,7 +300,7 @@ h2 {
 
 
 /* slide的套件，要覆蓋的設定 */
-.swiper {
+.swiper.mySwiper.mySwiper {
     margin-right: initial;
     width: 70%;
     /* 以視窗放大，超出的遮起來，改圖片不一樣大 */
