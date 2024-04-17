@@ -225,3 +225,8 @@ body {
     border-radius: 50px;
     border: none;
 }
+
+.go-product-btn:hover {
+    background-color: #F5C173;
+    color: #fff;
+}
