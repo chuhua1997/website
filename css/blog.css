@@ -123,3 +123,108 @@
 .third-pic4 {
     flex-grow: 3;
 }
+
+
+/* 新增文章區 */
+.new-article {
+    padding: 100px 0;
+}
+
+.article-title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    /* 讓該元素垂直對齊開始處 */
+    margin: 60px 0 40px 0;
+    /* 給一些底部間距，以防止與下面的卡片過於靠近 */
+}
+
+
+.blog-article-container {
+    width: 800px;
+    height: 400px;
+    /* 讓限定寬度的部分置中 */
+    margin: 60px auto;
+
+}
+
+/* 包兩塊區域的外圍，flex橫排 */
+.article-info {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #276322;
+    padding: 40px 0 30px 0;
+}
+
+/* 打文章的部分 */
+.new-blog .article-upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 上傳貼文自己畫的外框 */
+.article-upload-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #276322;
+    width: 350px;
+    height: 300px;
+}
+
+
+
+
+.article-warning-txt {
+    margin: 50px auto;
+}
+
+/* 包上傳文字還有上傳按鈕 */
+/* 讓按鈕文字置中 */
+.article-upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 貼文名稱和input外層 */
+.article-direction-name {
+    margin: 20px;
+}
+
+/* 貼文內容上傳及textarea的外層 */
+.article-direction-content {
+    margin: 20px;
+}
+
+/* 貼文內容 */
+.article-content {
+    margin-bottom: 20px;
+}
+
+/* 上傳文字的按鈕 */
+.btn-upload {
+    text-align: center;
+    color: #fff;
+    background-color: #276322;
+    /* margin: 20px auto; */
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+/* 全部送出按鈕的外層 */
+.submit-btn {
+    /* 按鈕置中 */
+    /* 一個div包button */
+    margin: 10px auto;
+}
+
+/* 全部資訊送出按鈕 */
+.article-finish-btn {
+    text-align: center;
+    color: #fff;
+    background-color: #276322;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
