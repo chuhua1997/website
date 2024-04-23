@@ -1,137 +1,17 @@
-* {
-    box-sizing: border-box;
-}
-
-/* html.body { */
-/* 為了slide設的 */
-/* position: relative;
+/* slide套件原預設 */
+/* .swiper {
+    width: 60%;
     height: 100%;
 } */
 
-/* 字型 */
-body {
-    font-family: "Inter", sans-serif;
-    /* padding-top: 100px; */
-}
-
-/* 最外層可設寬 */
-/*.wrapper {
-    /* max-width: 1200px; 
-}*/
-
-/* 共用文字設定 */
-h2 {
-    font-size: 36px;
-    letter-spacing: 5px;
-    font-weight: 900;
-}
-
-/* header那塊 */
-.logo {
-    width: 40px;
-    padding: 5px 0;
-}
-
-.logo img {
-    width: 100%;
-}
-
-.header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* 固定導覽列在上方 */
-    position: fixed;
-    width: 100%;
-    left: 0;
-    /* padding-top: 80px; */
-    z-index: 10;
-    padding: 0 30px;
-    background-color: #fff;
-}
-
-
-/*導航列的連結區塊*/
-.nav-selector {
-    display: flex;
-}
-
-/* 導航列的連結區塊裡的a標籤 */
-.nav-selector a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #101010;
-    padding: 15px;
-}
-
-/* banner圖文那一塊 */
-.banner-section {
-    /* 為了slide設的，裡面預設 */
-    position: relative;
-    height: 100%;
-    /* 圖片跑上去的地方往下推 */
-    padding-top: 50px;
-}
-
-.banner-pic {
-    /* 文字定在圖上，他的父層 */
-    position: relative;
-}
-
-/* banner文字區塊 */
-
-/* banner文字標題 */
-.banner-title {
-    padding: 30px 0;
-    font-family: "Inter";
-    font-size: 70px;
-    font-weight: 900;
-    color: #F5C173;
-    letter-spacing: 8px;
-    line-height: 1.2;
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    /* 會被圖蓋住 */
-    z-index: 3;
-    /* 想下底線 */
-    /* border-bottom: 2px solid #F5C173; */
-}
-
-/* banner slogan文字 */
-.banner-words {
-    /* 文字定在圖上，子層在這，父層banner-pic */
-    position: absolute;
-    top: 300px;
-    left: 100px;
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 12px;
-    z-index: 3;
-    line-height: 1.2;
-
-}
-
-.banner-words p span {
-    /* color: #fff; */
-    /* 濾鏡反轉顏色 */
-    filter: invert(100%);
-}
-
-/* slide套件原預設 */
-.swiper {
-    width: 60%;
-    height: 100%;
-}
-
-.swiper-slide {
+/* .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .swiper-slide img {
     display: block;
@@ -140,10 +20,7 @@ h2 {
     object-fit: cover;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    color: #fff;
-}
+
 
 
 .about-container {
@@ -325,7 +202,8 @@ h2 {
     overflow: hidden;
 }
 
+
 .swiper-button-next,
 .swiper-button-prev {
-    color: #000;
+    color: #fff;
 }
