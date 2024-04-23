@@ -1,0 +1,79 @@
+.product-container {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.product-pic {
+    margin: 0 30px;
+}
+
+.product-pic img {
+    height: 100%;
+}
+
+.product-txt {
+    margin: 0 30px;
+    width: 30%;
+}
+
+.product-zhname h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.product-enname h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+}
+
+.select-name {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.num {
+    margin: 0 10px;
+}
+
+.btn-buy {
+    text-align: center;
+    color: #fff;
+    background-color: #276322;
+    /* margin: 20px auto; */
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* .line {
+    color: #276322;
+} */
+
+/* 畫一條間格線 */
+/* 空的div有border可能看不見，所以加寬高 */
+/* .line {
+    border: 1px solid #276322;
+    margin: 0 10px;
+    height: 1px;
+    width: fit-content;
+} */
+
+.info-title {
+    margin: 20px 0;
+}
+
+.info-content {
+    font-size: 14px;
+    line-height: 1.5;
+}
