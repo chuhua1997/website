@@ -1,22 +1,104 @@
-.checkout {}
+.main-content {
+    width: 1000px;
+    margin: 0 auto;
+    /* border: 1px solid #333; */
+}
 
 .checkout-title {
     margin-top: 80px;
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     letter-spacing: 3px;
     font-weight: 900;
 }
 
-.cart {
-    font-size: 12px;
+.cart-word {
+    font-size: 18px;
     color: #101010;
+    padding: 10px 0 10px 30px;
+
 }
 
-.checkout-header {
+.checkout {}
+
+
+/* 共用排頭設定 */
+.row-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 20px 40px;
     border: 1px solid #333;
+    background-color: #276322;
+    color: #fff;
+}
+
+.checkout-container {
+    border-bottom: 1px solid #333;
+}
+
+.checkout-list {
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+}
+
+
+.checkout-card {
+    display: flex;
+}
+
+/* .checkout-pic {
+    width: 200px;
+    padding: 30px 10px 30px 40px;
+
+} */
+
+
+.checkout-info {
+    display: flex;
+    /* 為了讓子層使用flex: 0 0 auto;屬性 */
+}
+
+.checkout-pic {
+    flex: 0 0 auto;
+    /* 不允許 `.checkout-pic` 元素增長，保持固定寬度 */
+    /* flex-grow、flex-shrink、flex-basis */
+    width: 200px;
+    padding: 10px 10px 10px 40px;
+}
+
+.checkout-pic img {
+    width: 100%;
+    vertical-align: bottom;
+
+}
+
+.checkout-txt {
+    display: flex;
+    flex-grow: 1;
+    /* 佔據父容器的所有剩餘空間 */
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 40px;
+    /* 添加內邊距，使內容與上方的欄位對齊 */
+}
+
+.product-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-zhname {
+    padding: 5px 0;
+}
+
+.product-zhname,
+.product-enname,
+.checkout-price {}
+
+.number {
+    margin-left: -175px;
+    border: 1px solid #333;
+    border-radius: 10px;
 }
 
 .ckechout-name,
@@ -31,11 +113,11 @@
     /* width: 200px; */
 }
 
-.checkout-card {
+/* .checkout-card {
     display: flex;
     justify-content: center;
 
-}
+} */
 
 .checkout-info {}
 
@@ -44,10 +126,10 @@
 }
 
 
-.checkout-txt {
+/* .checkout-txt {
     display: flex;
     justify-content: space-around;
-}
+} */
 
 .product-zhname {}
 
