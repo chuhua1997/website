@@ -1,5 +1,9 @@
+* {
+    font-size: 14px;
+}
+
 .main-content {
-    width: 1000px;
+    width: 60%;
     margin: 0 auto;
     /* border: 1px solid #333; */
 }
@@ -15,42 +19,47 @@
 .cart-word {
     font-size: 18px;
     color: #101010;
-    padding: 10px 0 10px 30px;
 
 }
 
-.checkout {}
-
-
-/* 共用排頭設定 */
+/* ==========共用排頭設定========= */
 .row-header {
     display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
+    font-size: 20px;
+    padding: 20px 30px;
     border: 1px solid #333;
     background-color: #276322;
     color: #fff;
 }
 
 .checkout-container {
+    margin-top: 10px;
     border-bottom: 1px solid #333;
 }
 
 .checkout-list {
-    border-right: 1px solid #333;
-    border-left: 1px solid #333;
+    padding: 0px 30px;
+    border: 1px solid #333;
+
 }
 
 
 .checkout-card {
+    width: 100%;
     display: flex;
+    /* border-bottom: 1px solid #333; */
 }
 
-/* .checkout-pic {
-    width: 200px;
-    padding: 30px 10px 30px 40px;
+.checkout-card-price {
+    height: 150px;
+}
 
-} */
+.checkout-price-info {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
 
 
 .checkout-info {
@@ -62,8 +71,8 @@
     flex: 0 0 auto;
     /* 不允許 `.checkout-pic` 元素增長，保持固定寬度 */
     /* flex-grow、flex-shrink、flex-basis */
-    width: 200px;
-    padding: 10px 10px 10px 40px;
+    width: 150px;
+    padding: 10px 10px 10px 0;
 }
 
 .checkout-pic img {
@@ -77,64 +86,76 @@
     flex-grow: 1;
     /* 佔據父容器的所有剩餘空間 */
     align-items: center;
-    justify-content: space-between;
-    padding-right: 40px;
+    /* padding-right: 40px; */
     /* 添加內邊距，使內容與上方的欄位對齊 */
 }
 
 .product-name {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product-info {
+    display: flex;
     flex-direction: column;
 }
 
-.product-zhname {
-    padding: 5px 0;
-}
 
 .product-zhname,
-.product-enname,
-.checkout-price {}
+.product-enname {
+    padding-left: 5px;
+}
+
+.product-zhname {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.product-enname {
+    padding-top: 3px;
+    font-weight: 300;
+}
 
 .number {
-    margin-left: -175px;
     border: 1px solid #333;
     border-radius: 10px;
 }
 
 .ckechout-name,
+.product-name {
+    flex: 0 0 40%;
+}
+
 .checkout-num,
+.num-outside {
+    flex: 0 0 30%;
+}
+
 .checkout-del,
-.checkout-price {}
-
-
-.checkout-container {}
-
-.checkout-list {
-    /* width: 200px; */
+.cancel {
+    flex: 0 0 20%;
 }
 
-/* .checkout-card {
+.checkout-price-all,
+.checkout-price {
+    flex: 0 0 10%;
+}
+
+.checkout-price-info {
+    height: 100%;
     display: flex;
-    justify-content: center;
-
-} */
-
-.checkout-info {}
-
-.checkout-pic img {
-    /* width: 100%; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
 }
 
 
-/* .checkout-txt {
-    display: flex;
-    justify-content: space-around;
-} */
+.taxes-all {
+    border-bottom: 1px solid #333;
+}
 
-.product-zhname {}
-
-.product-enname {}
-
-.number {}
-
-.checkout-price {}
+.price-all {
+    font-size: 18px;
+    font-weight: 500;
+}

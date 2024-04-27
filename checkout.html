@@ -32,12 +32,12 @@
 
 <body>
     <!-- banner那一塊是header -->
-    <!-- <header class="header-section">
+    <header class="header-section">
         <div class="logo">
             <a href="index.html"><img src="pic/forest-house-logo .png" alt=""></a>
-        </div> -->
-    <!-- 導航列 -->
-    <!-- <nav>
+        </div>
+        <!-- 導航列 -->
+        <nav>
             <ul class="nav-selector">
                 <a href="about.html">
                     <li>關於我們</li>
@@ -55,16 +55,16 @@
                     <li><i class="fa-solid fa-user"></i></li>
                 </a>
                 <a href="">
-                    <li> -->
-    <!-- 購物車圖示 -->
-    <!-- <div class="nav-cart">
+                    <li>
+                        <!-- 購物車圖示 -->
+                        <div class="nav-cart">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
                     </li>
                 </a>
             </ul>
         </nav>
-    </header> -->
+    </header>
 
     <main class="main-content">
         <section class="section checkout">
@@ -75,34 +75,106 @@
                     <div class="ckechout-name">品項</div>
                     <div class="checkout-num">數量</div>
                     <div class="checkout-del">刪除</div>
-                    <div class="checkout-price">金額</div>
+                    <div class="checkout-price-all">金額</div>
                 </div>
-
                 <div class="checkout-list">
                     <div class="checkout-card">
-                        <div class="checkout-info">
-                            <div class="checkout-pic"><img src="pic/product-ceriman.png" alt=""></div>
-                        </div>
                         <div class="checkout-txt">
                             <div class="product-name">
-                                <div class="product-zhname">龜背芋</div>
-                                <div class="product-enname">Ceriman</div>
+                                <div class="checkout-pic"><img src="pic/product-ceriman.png" alt=""></div>
+                                <div class="product-info">
+                                    <div class="product-zhname">龜背芋</div>
+                                    <div class="product-enname">Ceriman</div>
+                                </div>
                             </div>
-                            <select class="number" name="num" id="">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
+                            <div class="num-outside">
+                                <select class="number" name="num" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
                             <div class="cancel">
                                 <!-- 叉叉圖示 -->
                                 <i class="fa-solid fa-x"></i>
                             </div>
                             <div class="checkout-price">NTD : 400</div>
-
                         </div>
                     </div>
+                    <div class="checkout-card">
+                        <div class="checkout-txt">
+                            <div class="product-name">
+                                <div class="checkout-pic"><img src="pic/product-asplenium.png" alt=""></div>
+                                <div class="product-info">
+                                    <div class="product-zhname">琴葉榕</div>
+                                    <div class="product-enname">Fiddle-leaf Fig</div>
+                                </div>
+                            </div>
+                            <div class="num-outside">
+                                <select class="number" name="num" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="cancel">
+                                <!-- 叉叉圖示 -->
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                            <div class="checkout-price">NTD : 400</div>
+                        </div>
+                    </div>
+                    <div class="checkout-card">
+                        <div class="checkout-txt">
+                            <div class="product-name">
+                                <div class="checkout-pic"><img src="pic/product-scindapsus.png" alt=""></div>
+                                <div class="product-info">
+                                    <div class="product-zhname">綠蘿</div>
+                                    <div class="product-enname">Scindapsus</div>
+                                </div>
+                            </div>
+                            <div class="num-outside">
+                                <select class="number" name="num" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="cancel">
+                                <!-- 叉叉圖示 -->
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                            <div class="checkout-price">NTD : 400</div>
+                        </div>
+                    </div>
+                    <div class="checkout-card-price">
+                        <div class="checkout-price-info">
+                            <div class="total-all">
+                                <!-- <div class="total-title">小計</div> -->
+                                <div class="total-price">小計 NTD : 400</div>
+                            </div>
+                            <div class="taxes-all">
+                                <!-- <div class="taxes-title">稅金</div> -->
+                                <div class="taxes-price">稅金 NTD : 20</div>
+                            </div>
+                            <div class="price-all">總計 NTD:420</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================付款方式=========== -->
+        <section class="section payment-method">
+            <div class="payment-container">
+                <div class="row-header payment-header">
+                    <div class="payment-name">付款方式</div>
                 </div>
             </div>
         </section>
