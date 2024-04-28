@@ -1,3 +1,8 @@
+* {
+    font-size: 18px;
+    font-weight: 300px;
+}
+
 .register-container {
     width: 60%;
     margin: 80px auto;
@@ -10,7 +15,7 @@
     font-size: 24px;
     letter-spacing: 5px;
     font-weight: 900;
-    margin: 40px 0 40px 0;
+    margin-top: 40px;
 }
 
 .register-info {
@@ -23,7 +28,11 @@
 .register-txt,
 .register-pic {
     width: 100%;
-    margin: 30px;
+    margin: 20px;
+}
+
+.register-pic {
+    height: 300px;
 }
 
 .register-pic img {
@@ -38,4 +47,26 @@ label {
 input {
     width: 100%;
     margin: 10px 0 20px 0;
+}
+
+.register-btn {
+    text-align: center;
+}
+
+.register-btn-submit {
+    margin: 15px 0 35px 0;
+    text-align: center;
+    color: #276322;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid #276322;
+}
+
+.register-btn-submit:hover {
+    text-align: center;
+    color: #fff;
+    background-color: #276322;
+    padding: 10px 30px;
+    border-radius: 50px;
 }
