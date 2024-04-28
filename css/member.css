@@ -6,7 +6,7 @@
 .register-container {
     width: 60%;
     margin: 80px auto;
-    padding: 0 30px;
+    padding: 30px;
     border: 1px solid #333;
 }
 
@@ -15,7 +15,6 @@
     font-size: 24px;
     letter-spacing: 5px;
     font-weight: 900;
-    margin-top: 40px;
 }
 
 .register-info {
@@ -54,7 +53,7 @@ input {
 }
 
 .register-btn-submit {
-    margin: 15px 0 35px 0;
+    margin: 15px 0;
     text-align: center;
     color: #276322;
     background-color: #fff;
