@@ -156,31 +156,99 @@
                     <div class="checkout-card-price">
                         <div class="checkout-price-info">
                             <div class="total-all">
-                                <!-- <div class="total-title">小計</div> -->
                                 <div class="total-price">小計 NTD : 400</div>
                             </div>
                             <div class="taxes-all">
-                                <!-- <div class="taxes-title">稅金</div> -->
                                 <div class="taxes-price">稅金 NTD : 20</div>
                             </div>
+                            <!-- ==================價錢分隔線=============== -->
+                            <div class="line"></div>
                             <div class="price-all">總計 NTD:420</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- ================付款方式=========== -->
-        <section class="section payment-method">
-            <div class="payment-container">
-                <div class="row-header payment-header">
-                    <div class="payment-name">付款方式</div>
+        <!-- =================訂購人======================== -->
+        <form action="">
+            <fieldset class="section user-info buyer-section">
+                <div class="buyer-container">
+                    <legend class="row-header buyer-header">訂購資訊</legend>
+                    <div class="table-space buyer-container">
+                        <div class="input-container buyer-person">
+                            <label for="buyer-name">訂購人姓名</label>
+                            <input type="text" name="buyer-name" id="buyer-name">
+                            <label for="buyer-number">訂購人電話</label>
+                            <input type="text" name="buyer-number" id="buyer-number">
+                        </div>
+                        <div class="input-container buyer-address-info">
+                            <label for="buyer-address">訂購人地址</label>
+                            <input type="text" name="buyer-address" id="buyer-address">
+                        </div>
+                    </div>
                 </div>
+            </fieldset>
+            <!-- ================付款方式=========== -->
+            <fieldset class="section payment-method">
+                <div class="payment-container">
+                    <legend class="row-header payment-header">付款方式</legend>
+                    <div class="table-space payment-container">
+                        <div class="input-container payment-use">
+                            <input type="radio" name="payment" id="payment-cash">
+                            <label for="payment-cash">取貨付款</label>
+                            <input type="radio" name="payment" id="payment-online">
+                            <label for="payment-online">線上付款</label>
+                        </div>
+                        <div class="input-container credit-card-info">
+                            <label for="credit-card-number">信用卡號碼</label>
+                            <input type="text" name="credit-card-number" id="credit-card-number">
+                        </div>
+                        <div class="input-container credit-card-date">
+                            <label for="credit-card-valid">有效年月</label>
+                            <input type="text" name="credit-card-valid" id="credit-card-valid">
+                        </div>
+                        <div class="input-container credit-card-verification-code">
+                            <label for="verification-code">背面驗證碼</label>
+                            <input type="text" name="verification-code" id="verification-code">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <!-- =====================運送方式================== -->
+            <fieldset class="section user-info deliver-section">
+                <div class="deliver-container">
+                    <legend class="row-header deliver-header">運送方式</legend>
+                    <div class="table-space deliver-container">
+                        <div class="input-container deliver-use">
+                            <input type="radio" name="deliver" id="deliver">
+                            <label for="payment-cash">自取</label>
+                            <input type="radio" name="deliver" id="deliver">
+                            <label for="payment-online">寄送</label>
+                        </div>
+                        <div class="input-container receiver-person">
+                            <label for="receiver-name"> 收件人</label>
+                            <input type="text" name="receiver-name" id="receiver-name">
+                            <label for="receiver-number">收件電話</label>
+                            <input type="text" name="receiver-number" id="receiver-number">
+                        </div>
+                        <div class="input-container receiver-address-info">
+                            <label for="receiver-address">收件地址</label>
+                            <input type="text" name="receiver-address" id="receiver-address">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="checkbox-check">
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">我已了解購物須知及配送服務之相關內容</label>
             </div>
-        </section>
+
+            <div class="btn submit-btn"><button class="checkout-btn">送出</button></div>
+        </form>
     </main>
 
-    <!-- <footer class="section end-info">
+    <footer class="section end-info">
         <div class="footer-info">
             <div class="footer-logo"><img src="pic/footer-logo.png" alt=""></div>
             <div class="footer-aboutus">
@@ -213,7 +281,7 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
 </body>
 
 </html>

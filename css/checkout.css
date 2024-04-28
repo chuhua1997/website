@@ -1,11 +1,15 @@
 * {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .main-content {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
-    /* border: 1px solid #333; */
+}
+
+form {
+    border: 1px solid #333;
+    margin: 30px 0 60px 0;
 }
 
 .checkout-title {
@@ -27,22 +31,31 @@
     display: flex;
     font-size: 20px;
     padding: 20px 30px;
-    border: 1px solid #333;
     background-color: #276322;
     color: #fff;
 }
 
 .checkout-container {
     margin-top: 10px;
+
+}
+
+
+
+.checkout-list {
+    border: 1px solid #333;
+}
+
+.checkout-card,
+.checkout-card-price {
     border-bottom: 1px solid #333;
 }
 
-.checkout-list {
+/* =======邊距30px======== */
+.checkout-txt,
+.checkout-price-info {
     padding: 0px 30px;
-    border: 1px solid #333;
-
 }
-
 
 .checkout-card {
     width: 100%;
@@ -50,6 +63,7 @@
     /* border-bottom: 1px solid #333; */
 }
 
+/*========= 內容撐不開的給固定高========== */
 .checkout-card-price {
     height: 150px;
 }
@@ -59,7 +73,6 @@
     flex-direction: row-reverse;
 
 }
-
 
 
 .checkout-info {
@@ -129,7 +142,7 @@
 
 .checkout-num,
 .num-outside {
-    flex: 0 0 30%;
+    flex: 0 0 20%;
 }
 
 .checkout-del,
@@ -139,7 +152,7 @@
 
 .checkout-price-all,
 .checkout-price {
-    flex: 0 0 10%;
+    flex: 0 0 20%;
 }
 
 .checkout-price-info {
@@ -151,11 +164,52 @@
 }
 
 
-.taxes-all {
-    border-bottom: 1px solid #333;
+/* ==========價錢中間分隔線======= */
+.line {
+    border: 1px solid #333;
+    width: 40%;
 }
 
 .price-all {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
+}
+
+.table-space {
+    padding: 30px;
+}
+
+/* ======表單輸入欄隔出距離===== */
+.input-container {
+    margin-bottom: 15px;
+}
+
+
+.checkbox-check {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.submit-btn {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.checkout-btn {
+    margin: 30px 0;
+    text-align: center;
+    color: #276322;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid #276322;
+}
+
+.checkout-btn:hover {
+    text-align: center;
+    color: #fff;
+    background-color: #276322;
+    padding: 10px 30px;
+    border-radius: 50px;
 }
