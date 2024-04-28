@@ -17,7 +17,7 @@
     font-weight: 900;
 }
 
-.register-info {
+.recommand-select {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@
 
 
 .register-txt,
-.register-pic {
+.recommand-show {
     width: 100%;
     margin: 20px;
 }
