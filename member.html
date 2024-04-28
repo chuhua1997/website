@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- nav檔拉入被包在header -->
+    <link rel="stylesheet" href="./css/nav-set.css">
+
+    <!-- banner css檔 -->
+    <link rel="stylesheet" href="./css/banner.css">
+
+    <!-- 拉入index.css檔(自己的) -->
+    <link rel="stylesheet" href="./css/member.css">
+
+
+
+    <!-- footer檔案 -->
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- inter文字檔案 -->
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Protest+Riot&display=swap"
+        rel="stylesheet">
+    <!-- inter文字檔案 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- 購物車圖示 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- banner那一塊是header -->
+    <header class="header-section">
+        <div class="logo">
+            <a href="index.html"><img src="pic/forest-house-logo .png" alt=""></a>
+        </div>
+        <!-- 導航列 -->
+        <nav>
+            <ul class="nav-selector">
+                <a href="about.html">
+                    <li>關於我們</li>
+                </a>
+                <a href="product.html">
+                    <li>觀葉植物</li>
+                </a>
+                <a href="blog.html">
+                    <li>一起養</li>
+                </a>
+                <a href="recommand.html">
+                    <li>命定植物</li>
+                </a>
+                <a href="member.html">
+                    <li><i class="fa-solid fa-user"></i></li>
+                </a>
+                <a href="">
+                    <li>
+                        <!-- 購物車圖示 -->
+                        <div class="nav-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="" class="form register-form">
+        <div class="register-container">
+            <legend class="register-title" onsubmit="alert('表單已送出')">會員註冊</legend>
+            <div class="register-info">
+                <div class="register-pic">
+                    <img src="./pic/member-pic.png" alt="">
+                </div>
+                <div class="register-txt">
+                    <div class="register-name-container">
+                        <label for="register-name">姓名</label>
+                        <input type="text" id="register-name" name="register-name">
+                    </div>
+                    <div class="register-email-container">
+                        <label for="register-email">電子信箱</label>
+                        <input type="text" id="register-email" name="register-email">
+                    </div>
+                    <div class="register-phone-container">
+                        <label for="register-phone">電話</label>
+                        <input type="text" id="register-phone" name="register-phone">
+                    </div>
+                    <div class="register-password-container">
+                        <label for="register-name">密碼</label>
+                        <input type="text" id="register-name" name="register-name">
+                    </div>
+                    <div class="btn register-btn"><button class="register-btn-submit">註冊</button></div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- <footer class="section end-info">
+        <div class="section footer-info">
+            <div class="footer-logo"><img src="pic/footer-logo.png" alt=""></div>
+            <div class="footer-aboutus">
+                <div class="footer-aboutus-title">關於我們</div>
+                <ul class="footer-aboutus-item">
+                    <li>Tel : 0300-000-000</li>
+                    <li>Email : forest.housexxxx@gmail.com</li>
+                    <li>Address : 新竹縣清流區松江路 00號</li>
+                </ul>
+            </div>
+            <div class="footer-service">
+                <div class="footer-service-title">服務項目</div>
+                <div class="footer-service-item">
+                    <div class="footer-service-item-info">
+                        <a href="about.html">
+                            <p>關於我們</p>
+                        </a>
+                        <a href="blog.html">
+                            <p>一起養</p>
+                        </a>
+                    </div>
+                    <div class="footer-service-item-buy">
+                        <a href="recommand.html">
+                            <p>命定植物</p>
+                        </a>
+                        <a href="product.html">
+                            <p>觀葉植物</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-reserve">本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用，絕無任何商業用途。</div>
+    </footer> -->
+</body>
+
+</html>
