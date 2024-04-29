@@ -24,9 +24,9 @@
 
 
 .about-container {
-    width: 1000px;
+    width: 80%;
     /* border: 1px solid red; */
-    margin: auto;
+    margin: 0 auto;
 }
 
 .about-list {

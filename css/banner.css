@@ -23,7 +23,7 @@
     /* 會被圖蓋住 */
     z-index: 3;
     /* 讓放在圖片上的文字顯眼一些 */
-    text-shadow: 2px 2px 10px #999;
+    text-shadow: 2px 2px 9px #333;
 }
 
 /* banner slogan文字 */

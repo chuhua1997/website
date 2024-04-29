@@ -1,6 +1,6 @@
 * {
     font-size: 18px;
-    font-weight: 300px;
+    font-weight: 300;
 }
 
 .recommand-container {
@@ -10,50 +10,44 @@
     border: 1px solid #333;
 }
 
-.register-title {
+.recommand-title {
     text-align: center;
     font-size: 24px;
     letter-spacing: 5px;
     font-weight: 900;
 }
 
-.recommand-select {
+.recommand-info {
     width: 100%;
     display: flex;
     justify-content: center;
+    /* align-items: flex-end; */
+    /* 保持底部对齐 */
+    /* min-height: min-content; */
+    /* 设置最小高度为内容的高度 */
+
 }
 
 
-.register-txt,
-.register-pic {
+.recommand-select,
+.recommand-show {
     width: 100%;
     margin: 20px;
 }
 
-.register-pic {
-    height: 300px;
-}
-
-.register-pic img {
-    height: 100%;
-    object-fit: cover;
+.recommand-show {
+    border: 1px solid #333;
 }
 
 label {
     display: block;
 }
 
-input {
+input,
+select {
     width: 100%;
     margin: 10px 0 20px 0;
 }
-
-
-
-
-
-
-
 
 /*============ 下方送出資料按鈕======== */
 .recommand-btn {

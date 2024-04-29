@@ -1,6 +1,6 @@
 /* 關於我們介紹的部分 */
 .aboutus {
-    width: 1000px;
+    width: 80%;
     margin: 100px auto;
     display: flex;
     flex-direction: column;

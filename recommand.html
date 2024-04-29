@@ -82,68 +82,53 @@
             </div>
         </div>
     </section>
-    <!-- <section class="section recommand-section">
-        <div class="recommand-container">
-            <div class="recommand-select">
-                <div class="what-space">
-                    <div class="space">你家的空間</div>
-                    <input type="text">
-                </div>
-                <div class="what-color">
-                    <div class="color">喜歡植物的顏色</div>
-                    <input type="text">
-                </div>
-                <div class="what-care">
-                    <div class="care">澆水的頻率</div>
-                    <input type="text">
-                </div>
-                <div class="what-shape">
-                    <div class="shape">葉子形狀選擇</div>
-                    <input type="text">
-                </div>
-
-            </div>
-            <div class="recommand-show">
-                <div class="recommand-title">找出適合你的植物</div>
-                <div class="show-box"></div>
-                <button class="btn submit">跳到商品頁面</button>
-            </div>
-        </div>
-    </section> -->
     <section class="section recommand-section">
         <div class="recommand-container">
             <legend class="recommand-title">找出適合你的植物</legend>
-            <div class="recommand-select">
-                <div class="recommand-txt">
-                    <div class="register-name-container">
-                        <label for="register-name">姓名</label>
-                        <input type="text" id="register-name" name="register-name">
+            <div class="recommand-info">
+                <div class="recommand-select">
+                    <div class="what-space">
+                        <label for="space">你家的空間</label>
+                        <select name="space" id="space">
+                            <option value="5坪以內">5坪以內</option>
+                            <option value="10坪以內">10坪以內</option>
+                            <option value="15坪以內">15坪以內</option>
+                        </select>
                     </div>
-                    <div class="register-email-container">
-                        <label for="register-email">電子信箱</label>
-                        <input type="email" id="register-email" name="register-email">
+                    <div class="what-color">
+                        <label for="color">喜歡植物的顏色</label>
+                        <select name="color" id="color">
+                            <option value="深綠色">深綠色</option>
+                            <option value="淺綠色">淺綠色</option>
+                        </select>
                     </div>
-                    <div class="register-phone-container">
-                        <label for="register-phone">電話</label>
-                        <input type="text" id="register-phone" name="register-phone">
+                    <div class="what-care">
+                        <label for="care">澆水的頻率(週)</label>
+                        <select name="space" id="care">
+                            <option value="不常澆">不常澆</option>
+                            <option value="隨時保持濕潤">隨時保持濕潤</option>
+                        </select>
                     </div>
-                    <div class="register-password-container">
-                        <label for="register-name">密碼</label>
-                        <input type="password" id="register-name" name="register-name">
+                    <div class="what-leave-shape">
+                        <label for="leave-shape">葉子形狀選擇</label>
+                        <select name="leave-shape" id="leave-shape">
+                            <option value="圓形及橢圓形">圓形及橢圓形</option>
+                            <option value="細長型">細長型</option>
+                        </select>
                     </div>
-
-
                 </div>
                 <div class="recommand-show">
-                    <img src="./pic/member-pic.png" alt="">
+                    <div class="show-pic"></div>
                 </div>
-                <div class="btn recommand-btn"><button class="register-btn-submit">註冊</button></div>
+            </div>
+            <div class="btn recommand-btn">
+                <button class="recommand-btn-submit">跳到商品頁面</button>
             </div>
         </div>
     </section>
 
 
-    <!-- <footer class="section end-info">
+    <footer class="section end-info">
         <div class="section footer-info">
             <div class="footer-logo"><img src="pic/footer-logo.png" alt=""></div>
             <div class="footer-aboutus">
@@ -177,7 +162,7 @@
             </div>
         </div>
         <div class="right-reserve">本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用，絕無任何商業用途。</div>
-    </footer> -->
+    </footer>
 
 
 
