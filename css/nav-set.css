@@ -68,24 +68,6 @@ body {
     background-color: #fff;
 }
 
-.pc-nav {
-    display: block;
-    /* position: absolute;
-    right: 50px;
-    top: 30px; */
-}
-
-/* .nav-selector {
-    display: flex;
-    flex-direction: column;
-} */
-
-/* ================漢堡選單設定============= */
-/* 麵包本來不顯示 */
-/* .header-section .hb {
-    display: none;
-} */
-
 /* ========導覽列的設定============= */
 
 /* ========768px以上適用，大於768px，平板桌機時用============= */
@@ -94,23 +76,27 @@ body {
         display: none;
     }
 
+
+
 }
 
 @media screen and (max-width:768px) {
+
+    /* 
     .header-section .pc-nav {
         width: 300px;
         display: block;
         position: absolute;
-        background-color: #276322;
+        background-color: red;
         color: #fff;
-        right: 30px;
-        /* 漢堡40px+ 上面的padding-top:10px */
-        top: 50px;
-    }
+        right: 30px; */
+    /* 漢堡40px+ 上面的padding-top:10px */
+    /* top: 50px; */
+}
 
-    .pc-nav .nav-selector {
+/* .pc-nav .nav-selector {
         display: flex;
         flex-direction: column;
         background-color: #fff;
     }
-}
+} */
