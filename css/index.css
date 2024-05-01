@@ -20,13 +20,15 @@
     object-fit: cover;
 }
 
-
+.swiper {
+    --swiper-navigation-color: #fff;
+}
 
 
 .about-container {
     width: 80%;
     /* border: 1px solid red; */
-    margin: 0 auto;
+    margin: auto;
 }
 
 .about-list {
