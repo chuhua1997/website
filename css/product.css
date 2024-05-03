@@ -14,7 +14,7 @@
 
 /* 商品列表 */
 .product {
-    background-color: #FCFCE4;
+    background-color: #EBE7E0;
 }
 
 .product-container {
@@ -49,7 +49,7 @@
 
 .product-card {
     width: 200px;
-    margin: 20px 40px;
+    margin: 0px 40px 10px 40px;
 }
 
 .product-info {

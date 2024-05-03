@@ -19,7 +19,7 @@
     font-size: 24px;
     letter-spacing: 3px;
     font-weight: 900;
-    color: #F5C173;
+    /* color: #F5C173; */
 }
 
 .aboutus-txt {
@@ -67,10 +67,10 @@
 
 }
 
-.service-title {
+.service-title h2 {
     text-align: center;
     margin: 20px 0;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 600;
     letter-spacing: 5px;
 }
