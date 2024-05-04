@@ -69,16 +69,16 @@ h2 {
 
 /* header-section 中間空格 hb，他的裡面一層才會被選到 */
 .header-section .hb {
-    /* ====一開始先不會出現的漢堡圖示===== */
-    display: none;
-    width: 40px;
-    height: 40px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 10px;
     cursor: pointer;
 
 }
@@ -109,12 +109,16 @@ h2 {
     }
 
     /* 點下去會展開 */
-    /* .show-menu {
+    .show-menu {
+        position: absolute;
+        top: 65px;
+        right: 30px;
         display: block;
-        width: 100%;
+        margin: 10px auto;
+        width: 30%;
         height: 100vh;
+        background-color: #fff;
 
-    } */
+
+    }
 }
-
-@media screen and (min-width:768px) {}
