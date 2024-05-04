@@ -114,6 +114,21 @@ footer {
     padding: 10px 0;
 }
 
+@media screen and (max-width:520px) {
+    .footer-info {
+        padding: 10px 0;
+        display: block;
+    }
+
+    .footer-logo {
+        width: 20%;
+        margin: 10px auto;
+
+    }
+
+
+}
+
 @media screen and (max-width:593px) {
 
     .footer-service-item-info {
@@ -129,7 +144,12 @@ footer {
 
 @media screen and (max-width:830px) {
     .footer-aboutus {
-        margin: 0;
+        margin: 15px 40px;
     }
+
+    .footer-service {
+        margin: 15px 40px;
+    }
+
 
 }
