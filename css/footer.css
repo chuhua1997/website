@@ -19,7 +19,6 @@ footer {
 
 .footer-info {
     padding: 40px 0;
-    width: 1000px;
     /* 設立寬度後先使內容在容器中水平居中 */
     margin: 0 auto;
     display: flex;
