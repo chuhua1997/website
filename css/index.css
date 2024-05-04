@@ -193,52 +193,15 @@ body {
     overflow: hidden;
 }
 
-@media screen and (max-width:365px) {
+/* @media screen and (max-width:365px) {
     .swiper.mySwiper.mySwiper {
         height: auto;
         margin-right: initial;
         width: 100%;
         /* 以視窗放大，超出的遮起來，改圖片不一樣大 */
-        height: 100vw;
-        overflow: hidden;
-    }
-}
+/* height: 100vw; */
+/* overflow: hidden; */
+/* } */
+/* } */
 
 /* ========導覽列的設定============= */
-
-/* ========768px以上適用，大於768px，平板桌機時用============= */
-@media screen and (min-width:768px) {
-    .header-section .hb {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width:768px) {
-    .pc-nav .nav-selector {
-        /* display: none; */
-    }
-
-    .logo {
-        width: 10%;
-        padding: 5px 0;
-    }
-
-    /* 點下去會展開 */
-    .show-menu {
-        display: block;
-    }
-
-}
-
-@media screen and (max-width:1000px) {
-
-    .swiper.mySwiper.mySwiper {
-        margin-right: initial;
-        width: 100%;
-        /* 以視窗放大，超出的遮起來，改圖片不一樣大 */
-        height: 45vw;
-        overflow: hidden;
-    }
-
-}

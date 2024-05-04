@@ -60,38 +60,27 @@ body {
     height: 100%;
 }
 
-@media screen and (max-width:743px) {
+/* @media screen and (max-width:743px) {
     .pc-nav .nav-selector {
         display: none;
     }
 
     .swiper.mySwiper.mySwiper {
         /* margin-right: initial; */
-        width: 100%;
-        margin: 0;
-        /* 以視窗放大，超出的遮起來，改圖片不一樣大 */
-        height: 45vw;
-        overflow: hidden;
-    }
+/* width: 100%; */
+/* margin: 0; */
+/* 以視窗放大，超出的遮起來，改圖片不一樣大 */
+/* height: 45vw; */
+/* overflow: hidden; */
+/* } */
 
+/* }  */
+
+
+
+/* @media screen and (max-width:1000px) {
     .banner-title {
-
-        font-size: 55px;
-
-    }
-}
-
-@media screen and (max-width:1000px) {
-    .banner-title {
-        padding: 0;
         font-size: 80px;
-        position: absolute;
-        top: 86px;
-        left: 100px;
-        /* 會被圖蓋住 */
-        z-index: 3;
-        /* 讓放在圖片上的文字顯眼一些 */
-        text-shadow: 2px 2px 9px #333;
     }
 
     .pc-nav .nav-selector {
@@ -100,16 +89,16 @@ body {
 
     .swiper.mySwiper.mySwiper {
         /* margin-right: initial; */
-        width: 100%;
-        margin: 0;
-        /* 以視窗放大，超出的遮起來，改圖片不一樣大 */
-        height: 45vw;
-        overflow: hidden;
-    }
+/* width: 100%; */
+/* margin: 0; */
+/* 以視窗放大，超出的遮起來，改圖片不一樣大 */
+/* height: 45vw; */
+/* overflow: hidden; */
+/* } */
 
-    .banner-title {
+/* .banner-title { */
 
-        font-size: 65px;
+/* font-size: 65px; */
 
-    }
-}
+/* } */
+/* } */
