@@ -32,8 +32,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
-
 }
 
 .footer-aboutus-title {
@@ -77,7 +75,6 @@ footer {
 .footer-service-item-info {
     display: flex;
     flex-direction: row;
-
 }
 
 .footer-service-item-info a {
@@ -95,7 +92,6 @@ footer {
 
 .footer-service-item-buy {
     display: flex;
-
 }
 
 .footer-service-item-buy a {
@@ -116,4 +112,24 @@ footer {
     font-size: 12px;
     font-weight: 300;
     padding: 10px 0;
+}
+
+@media screen and (max-width:593px) {
+
+    .footer-service-item-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-service-item-buy {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:830px) {
+    .footer-aboutus {
+        margin: 0;
+    }
+
 }
