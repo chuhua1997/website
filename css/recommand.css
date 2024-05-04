@@ -40,12 +40,14 @@ body {
 
 label {
     display: block;
+    font-size: 1rem;
 }
 
 input,
 select {
     width: 100%;
     margin: 10px 0 20px 0;
+    font-size: 1rem;
 }
 
 /*============ 下方送出資料按鈕======== */

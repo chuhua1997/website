@@ -30,7 +30,6 @@ h4 {
     color: #101010;
 }
 
-.cart-word {}
 
 /* ==========共用排頭設定========= */
 .row-header {
@@ -185,11 +184,18 @@ h4 {
     padding: 30px;
 }
 
+
+
 /* ======表單輸入欄隔出距離===== */
 .input-container {
     margin-bottom: 15px;
 }
 
+
+/* 所有輸入資料的label字大小 */
+label {
+    font-size: 1rem;
+}
 
 .checkbox-check {
     text-align: center;
