@@ -51,12 +51,17 @@ h2 {
 }
 
 /* 導航列的連結區塊裡的a標籤 */
-.nav-selector a {
+.nav-selector li {
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 2px;
     color: #101010;
     padding: 15px;
+}
+
+.nav-selector li a {
+    text-decoration: none;
+    color: #101010;
 }
 
 /* header-section 中間空格 hb，他的裡面一層才會被選到 */
