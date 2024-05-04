@@ -1,6 +1,11 @@
 /* banner那塊 */
 /* banner文字標題 */
 /* banner圖文那一塊 */
+
+body {
+    font-size: 10px;
+}
+
 .banner-section {
     /* 為了slide設的，裡面預設 */
     position: relative;
@@ -29,6 +34,7 @@
 /* banner slogan文字 */
 .banner-pic {
     height: 40vw;
+    width: 100%;
     /* 文字定在圖上，他的父層 */
     position: relative;
 }
@@ -52,4 +58,58 @@
 .banner-pic img {
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width:743px) {
+    .pc-nav .nav-selector {
+        display: none;
+    }
+
+    .swiper.mySwiper.mySwiper {
+        /* margin-right: initial; */
+        width: 100%;
+        margin: 0;
+        /* 以視窗放大，超出的遮起來，改圖片不一樣大 */
+        height: 45vw;
+        overflow: hidden;
+    }
+
+    .banner-title {
+
+        font-size: 55px;
+
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .banner-title {
+        padding: 0;
+        font-size: 80px;
+        position: absolute;
+        top: 86px;
+        left: 100px;
+        /* 會被圖蓋住 */
+        z-index: 3;
+        /* 讓放在圖片上的文字顯眼一些 */
+        text-shadow: 2px 2px 9px #333;
+    }
+
+    .pc-nav .nav-selector {
+        display: none;
+    }
+
+    .swiper.mySwiper.mySwiper {
+        /* margin-right: initial; */
+        width: 100%;
+        margin: 0;
+        /* 以視窗放大，超出的遮起來，改圖片不一樣大 */
+        height: 45vw;
+        overflow: hidden;
+    }
+
+    .banner-title {
+
+        font-size: 65px;
+
+    }
 }

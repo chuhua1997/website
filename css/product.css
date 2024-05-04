@@ -1,4 +1,8 @@
 /* 修改banner上文字顏色 */
+body {
+    font-size: 10px;
+}
+
 .banner-title {
     font-size: 50px;
     text-shadow: 2px 2px 10px #333;

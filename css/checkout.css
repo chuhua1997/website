@@ -1,5 +1,5 @@
-* {
-    font-size: 18px;
+body {
+    font-size: 10px;
 }
 
 .main-content {
@@ -12,6 +12,10 @@ form {
     margin: 30px 0 60px 0;
 }
 
+h3 {
+    font-size: 1.2rem;
+}
+
 .checkout-title {
     margin-top: 80px;
     text-align: center;
@@ -20,11 +24,13 @@ form {
     font-weight: 900;
 }
 
-.cart-word {
-    font-size: 18px;
+/* 所有價錢跟英文名稱 */
+h4 {
+    font-size: 1rem;
     color: #101010;
-
 }
+
+.cart-word {}
 
 /* ==========共用排頭設定========= */
 .row-header {
@@ -197,6 +203,8 @@ form {
 }
 
 .checkout-btn {
+    font-size: 1rem;
+    letter-spacing: 2px;
     margin: 30px 0;
     text-align: center;
     color: #276322;

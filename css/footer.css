@@ -1,4 +1,8 @@
 /* footer的部分 */
+body {
+    font-size: 10px;
+}
+
 footer {
     background-color: #276322;
 }
