@@ -22,7 +22,7 @@ body {
 }
 
 .product-container {
-    width: 1000px;
+    /* width: 1000px; */
     margin: 0px auto;
     padding: 50px 0;
 }
@@ -63,6 +63,13 @@ body {
     padding-bottom: 5px;
 }
 
+
+/* 購物車圖示 */
+.nav-cart {
+    font-size: 15px;
+    color: #333;
+}
+
 .product-card-pic img {
     width: 100%;
 }
@@ -95,7 +102,7 @@ body {
 
 /* 新手小建議 */
 .warning {
-    width: 1000px;
+    /* width: 1000px; */
     margin: 30px auto;
     display: flex;
     justify-content: center;
@@ -136,8 +143,8 @@ footer {
 
 .footer-info {
     padding: 40px 0;
-    width: 1000px;
-    /* 設立寬度後先使內容在容器中水平居中 */
+    /* width: 1000px; */
+    /* 不要設寬度後容器中水平居中 */
     margin: 0 auto;
     display: flex;
     justify-content: center;
