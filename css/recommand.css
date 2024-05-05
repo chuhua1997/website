@@ -2,6 +2,14 @@ body {
     font-size: 10px;
 }
 
+/* 微調描述文字 */
+.banner-words {
+    /* 文字定在圖上，子層在這，父層banner-pic */
+    position: absolute;
+    top: 25%;
+    left: 7%;
+}
+
 .recommand-container {
     width: 60%;
     margin: 80px auto;
