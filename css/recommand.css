@@ -6,7 +6,7 @@ body {
 .banner-words {
     /* 文字定在圖上，子層在這，父層banner-pic */
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 7%;
 }
 
