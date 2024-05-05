@@ -114,49 +114,46 @@ footer {
     padding: 10px 0;
 }
 
-@media screen and (max-width:520px) {
-    .footer-info {
-        padding: 10px 0;
+/* ===============RWD網頁設定================ */
+
+
+
+
+
+@media screen and (min-width: 586px) and (max-width: 669px) {
+    .footer-aboutus {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:505px) and (max-width: 585px) {
+    .footer-service-item-info {
         display: block;
+    }
+
+    .footer-service-item-buy {
+        display: block;
+    }
+
+    .footer-aboutus {
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width:430px) and (max-width: 504px) {
+    .footer-aboutus {
+        display: block;
+        padding: 20px 0;
     }
 
     .footer-logo {
         width: 20%;
         margin: 10px auto;
-
     }
 
-
-}
-
-@media screen and (max-width:593px) {
-
-    .footer-service-item-info {
-        display: flex;
-        flex-direction: column;
+    .footer-aboutus-title {
+        margin: 20px 10px 5px 10px;
     }
-
-    .footer-service-item-buy {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width:670px) {
-
-    .footer-aboutus {
-        margin: 15px 0px;
-    }
-}
-
-@media screen and (max-width:830px) {
-    .footer-aboutus {
-        margin: 15px 40px;
-    }
-
-    .footer-service {
-        margin: 15px 40px;
-    }
-
 
 }

@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: "Inter", "sans-serif";
+    font-family: "Inter", sans-serif;
     /* padding-top: 100px; */
     font-size: 10px;
 }
@@ -49,6 +49,7 @@ h2 {
 /*導航列的連結區塊橫排，裝連結的ul*/
 .nav-selector {
     display: flex;
+    /* display: block; */
 }
 
 
@@ -67,8 +68,12 @@ h2 {
     color: #fff;
 }
 
+.nav_hab {
+    display: none;
+}
+
 /* header-section 中間空格 hb，他的裡面一層才會被選到 */
-.header-section .hb {
+.header-section .nav_hab .hb {
     position: absolute;
     top: 15px;
     right: 30px;
@@ -81,6 +86,7 @@ h2 {
     align-items: center;
     cursor: pointer;
 
+
 }
 
 .header-section .hb span {
@@ -90,12 +96,6 @@ h2 {
 }
 
 /* ========768px以上適用，大於768px，平板桌機時用============= */
-@media screen and (min-width:768px) {
-    .header-section .hb {
-        display: none;
-    }
-
-}
 
 /* ==============小於768px時使用============*/
 @media screen and (max-width:768px) {
@@ -103,9 +103,13 @@ h2 {
         display: none;
     }
 
+    .nav_hab {
+        display: block;
+    }
+
+
     .logo {
-        width: 10%;
-        padding: 5px 0;
+        width: 5%;
     }
 
     /* 點下去會展開 */
@@ -117,8 +121,6 @@ h2 {
         margin: 10px auto;
         width: 30%;
         height: 100vh;
-        background-color: #fff;
-
-
+        background-color: #fff
     }
 }
