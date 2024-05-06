@@ -23,6 +23,12 @@ body {
     margin: auto;
 }
 
+@media screen and (max-width:768px) {
+    .about-container {
+        width: 90%;
+    }
+}
+
 .about-list {
     width: 75%;
     display: flex;
@@ -30,6 +36,13 @@ body {
     justify-content: center;
     align-content: center;
     margin: 100px auto;
+}
+
+@media screen and (max-width:768px) {
+    .about-list {
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 .about-txt {
@@ -66,10 +79,18 @@ body {
     top: 200px;
     right: -100px;
     padding: 20px;
-    /* border: 2px solid #276322; */
     background-color: #fff;
     line-height: 1.5;
 
+}
+
+@media screen and (max-width:768px) {
+    .about-txt .paragraph {
+        width: 80vw;
+        top: 0;
+        right: 0;
+        position: relative;
+    }
 }
 
 .about-txt .paragraph p {
@@ -121,6 +142,11 @@ body {
     ;
 }
 
+@media screen and (max-width:768px) {
+    .photogroup {
+        width: 100%;
+    }
+}
 
 .item img {
     width: 100%;
@@ -193,15 +219,19 @@ body {
     overflow: hidden;
 }
 
-/* @media screen and (max-width:365px) {
+@media screen and (max-width:768px) {
     .swiper.mySwiper.mySwiper {
         height: auto;
         margin-right: initial;
         width: 100%;
         /* 以視窗放大，超出的遮起來，改圖片不一樣大 */
-/* height: 100vw; */
-/* overflow: hidden; */
-/* } */
-/* } */
+        overflow: hidden;
+    }
+}
 
-/* ========導覽列的設定============= */
+/* 小於768px */
+@media screen and (max-width:768px) {
+    .about-pic {
+        width: 100%;
+    }
+}

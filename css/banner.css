@@ -6,6 +6,21 @@ body {
     font-size: 10px;
 }
 
+/* owl套件 */
+
+/* .owl-theme .item {
+    height: 10rem;
+    background: #4dc7a0;
+    padding: 1rem;
+}
+
+.owl-carousel .item h4 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.4375rem;
+    margin-top: 0rem;
+} */
+
 .banner-section {
     height: 100%;
     /* 圖片跑上去的地方往下推 */
@@ -19,6 +34,12 @@ body {
     /* 文字定在圖上，他的父層 */
     position: relative;
     /* border: 1px solid blue; */
+}
+
+@media screen and (max-width:768px) {
+    .banner-pic {
+        height: auto;
+    }
 }
 
 .banner-title {

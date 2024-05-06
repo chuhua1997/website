@@ -4,7 +4,6 @@
 
 body {
     font-family: "Inter", sans-serif;
-    /* padding-top: 100px; */
     font-size: 10px;
 }
 
@@ -49,7 +48,7 @@ h2 {
 /*導航列的連結區塊橫排，裝連結的ul*/
 .nav-selector {
     display: flex;
-    /* display: block; */
+
 }
 
 
@@ -69,14 +68,15 @@ h2 {
 }
 
 .nav_hab {
+    position: absolute;
+    top: 15px;
+    right: 30px;
     display: none;
 }
 
 /* header-section 中間空格 hb，他的裡面一層才會被選到 */
 .header-section .nav_hab .hb {
-    position: absolute;
-    top: 15px;
-    right: 30px;
+
     width: 50px;
     height: 50px;
     background-color: #fff;

@@ -5,7 +5,10 @@ var swiper = new Swiper(".mySwiper", {
     keyboard: {
         enabled: true,
     },
-
+    autoplay: {
+        delay: 1000,
+    },
+    loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,

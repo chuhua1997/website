@@ -8,7 +8,7 @@ footer {
 }
 
 .footer-logo {
-    width: 50px;
+    width: 8%;
     margin: 30px 40px;
 
 }
@@ -48,8 +48,6 @@ footer {
     font-weight: 300;
     margin: 10px;
 }
-
-
 
 
 .footer-service {
@@ -120,42 +118,81 @@ footer {
 
 
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
     .footer-aboutus {
         margin: 0;
     }
 }
 
 @media screen and (min-width:768px) and (max-width: 992px) {
-    .footer-service-item-info {
-        display: block;
+    .footer-logo {
+        width: 8%;
     }
 
-    .footer-service-item-buy {
-        display: block;
+    .footer-aboutus-title {
+        font-size: 16px;
+    }
+
+    .footer-aboutus-item li,
+    .footer-service-title,
+    .footer-service-item-info p,
+    .footer-service-item-buy p {
+        font-size: 18px;
     }
 
     .footer-aboutus {
         margin: 0;
     }
-
 }
 
 @media screen and (min-width:992px) and (max-width: 1200px) {
-    .footer-aboutus {
-        display: block;
-        padding: 20px 0;
-    }
-
     .footer-logo {
-        width: 20%;
-        margin: 10px auto;
+        width: 10%;
     }
 
     .footer-aboutus-title {
-        margin: 20px 10px 5px 10px;
+        font-size: 18px;
     }
 
+    .footer-aboutus-item li {
+        font-size: 20px;
+    }
+
+    .footer-service-title {
+        font-size: 20px;
+    }
+
+    .footer-service-item-info p {
+        font-size: 20px;
+    }
+
+    .footer-service-item-buy p {
+        font-size: 20px;
+    }
 }
 
-@media screen and (min-width:1200px) {}
+@media screen and (min-width:1200px) {
+    .footer-logo {
+        width: 10%;
+    }
+
+    .footer-aboutus-title {
+        font-size: 20px;
+    }
+
+    .footer-aboutus-item li {
+        font-size: 16px;
+    }
+
+    .footer-service-title {
+        font-size: 20px;
+    }
+
+    .footer-service-item-info p {
+        font-size: 20px;
+    }
+
+    .footer-service-item-buy p {
+        font-size: 20px;
+    }
+}
