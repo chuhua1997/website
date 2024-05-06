@@ -120,13 +120,13 @@ footer {
 
 
 
-@media screen and (min-width: 586px) and (max-width: 669px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     .footer-aboutus {
         margin: 0;
     }
 }
 
-@media screen and (min-width:505px) and (max-width: 585px) {
+@media screen and (min-width:768px) and (max-width: 992px) {
     .footer-service-item-info {
         display: block;
     }
@@ -141,7 +141,7 @@ footer {
 
 }
 
-@media screen and (min-width:430px) and (max-width: 504px) {
+@media screen and (min-width:992px) and (max-width: 1200px) {
     .footer-aboutus {
         display: block;
         padding: 20px 0;
@@ -157,3 +157,5 @@ footer {
     }
 
 }
+
+@media screen and (min-width:1200px) {}

@@ -118,9 +118,14 @@ h2 {
         top: 65px;
         right: 30px;
         display: block;
-        margin: 10px auto;
+        margin: 0px auto;
         width: 30%;
         height: 100vh;
         background-color: #fff
+    }
+
+    /* 設定文字 */
+    .nav-selector li p {
+        color: blue;
     }
 }

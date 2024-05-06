@@ -30,7 +30,7 @@ body {
 }
 
 .product-title {
-    margin: 0px 120px;
+    margin: 0px auto;
     /* 做下底線 */
     border-bottom: 1px solid #333;
     width: fit-content;
@@ -143,7 +143,7 @@ footer {
 
 .footer-info {
     padding: 40px 0;
-    width: 1000px;
+    /* width: 1000px; */
     /* 不要設寬度後容器中水平居中 */
     margin: 0 auto;
     display: flex;
@@ -237,27 +237,36 @@ footer {
 
 /* ============RWD設定=========== */
 
-@media screen and (min-width: 100px) {
+/* 大於等於 1200px 寬度 */
+@media screen and (min-width: 1200px) {
     .product-list {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-/* 大于等于 768px 宽度、小于 1000px 宽度时，每行显示 3 张图片 */
-@media screen and (min-width: 768px) and (max-width: 999px) {
+/* 大於等於 768px 寬度、小於 1000px 寬度时，每行顯示 3 張圖片 */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .product-list {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .product-list {
+        width: 800px;
+    }
+
+    .warning {
+        width: 800px;
+    }
 }
 
-/* 大于等于 568px 宽度、小于 768px 宽度时，每行显示 2 张图片 */
+/* 大於等於  568px 寬度、小於 768px 寬度时，每行顯示 2 張圖片 */
 @media screen and (min-width: 568px) and (max-width: 767px) {
     .product-list {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* 小于 568px 宽度时，每行显示 1 张图片 */
+/* 小於 568px 寬度时，每行顯示 1 張圖片 */
 @media screen and (max-width: 567px) {
     .product-list {
         grid-template-columns: 1fr;

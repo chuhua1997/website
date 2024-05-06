@@ -18,7 +18,7 @@ body {
     width: 100%;
     /* 文字定在圖上，他的父層 */
     position: relative;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .banner-title {
