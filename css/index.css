@@ -217,50 +217,6 @@ body {
     scale: 1.1;
 }
 
-
-@media screen and (max-width:375px) {
-
-    .photogroup {
-        width: 100%;
-        grid-template-areas:
-            "a a "
-            "c d "
-            "e e "
-            "e e "
-            "b b"
-            "b b"
-            "f f"
-            "g h"
-        ;
-    }
-}
-
-@media screen and (min-width:375px)and (max-width: 575px) {
-    .photogroup {
-        width: 100%;
-        grid-template-areas:
-            "a a "
-            "c d "
-            "e e "
-            "e e "
-            "b b"
-            "b b"
-            "f f"
-            "g h"
-        ;
-    }
-}
-
-@media screen and (min-width:576px) and (max-width: 767px) {
-    .photogroup {
-        width: 576px;
-        height: auto;
-
-    }
-}
-
-
-
 .item img {
     width: 100%;
     height: 100%;
@@ -315,12 +271,55 @@ body {
     text-decoration: none;
     text-align: center;
     color: #fff;
-    background-color: #276322;
+    background-color: #9e6914;
     padding: 10px 30px;
     border-radius: 50px;
 }
 
+.go-to-product a:hover {
+    background-color: #783e19
+}
 
+@media screen and (max-width:375px) {
+
+    .photogroup {
+        width: 100%;
+        grid-template-areas:
+            "a a "
+            "c d "
+            "e e "
+            "e e "
+            "b b"
+            "b b"
+            "f f"
+            "g h"
+        ;
+    }
+}
+
+@media screen and (min-width:375px)and (max-width: 575px) {
+    .photogroup {
+        width: 100%;
+        grid-template-areas:
+            "a a "
+            "c d "
+            "e e "
+            "e e "
+            "b b"
+            "b b"
+            "f f"
+            "g h"
+        ;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 767px) {
+    .photogroup {
+        width: 576px;
+        height: auto;
+
+    }
+}
 
 
 /* slide的套件，要覆蓋的設定 */

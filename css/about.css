@@ -143,15 +143,17 @@ body {
     font-size: 1rem;
     letter-spacing: 2px;
     text-align: center;
-    color: #F5C173;
-    background-color: #fff;
+    color: #fff;
+    background-color: #9e6914;
     padding: 10px 30px;
     border-radius: 50px;
     border: none;
 }
 
+
+
 .go-product-btn:hover {
-    background-color: #F5C173;
+    background-color: #783e19;
     color: #fff;
 }
 

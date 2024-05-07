@@ -1,0 +1,67 @@
+header {
+    background-color: #EEEEEE;
+    padding: 12px 12px;
+    /* 往下滾要固定，所以fixed */
+    position: fixed;
+    top: 0;
+    /* 左右靠邊滿版 */
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav .nav__item {
+    color: #fffdfe;
+    padding: 0 12px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.header__nav .nav__item a {
+    line-height: 44px;
+}
+
+.hamBar {
+    display: none;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media all and (max-width: 768px) {
+    .header__nav {
+        display: none;
+        /* 改變成絕對定位 */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        /* menu轉成直的 */
+        flex-direction: column;
+        transform: translateY(100%);
+        background-color: #fff;
+    }
+
+    .header__nav .nav__item {
+        width: 100%;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .hamBar {
+        display: flex;
+    }
+
+    .header__nav.show {
+        height: 220px;
+        display: flex;
+        transition: all .3s;
+    }
+}

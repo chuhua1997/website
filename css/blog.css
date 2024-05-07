@@ -7,82 +7,102 @@ body {
     text-align: center;
 }
 
-/* 下面圖片blog部分 */
+/* 照片牆的部份 */
 
-/* 圖片外框共同設定 */
-.photo-first-container,
-.second-line-container,
-.third-line-container {
-    width: 1000px;
-    margin: auto;
+.photo-wall-title {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    margin: 100px 0 40px 0;
+    color: #276322;
 }
 
-.first-line-list {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: stretch; */
-    /* border: 1px solid blue; */
+.photogroup {
+    margin: 0 auto;
+    width: 800px;
+    height: auto;
+    margin-bottom: 50px;
+    /* border: 3px solid #666; */
+    display: grid;
+    gap: 10px 10px;
+
+
+    grid-template-areas:
+        "a b b c"
+        "d e e f"
+        "g h i j"
+    ;
 }
 
-.first-line-pic {
-    width: 300px;
-    /* 因為圖片不一樣高，所以設固定寬讓圖片都能對齊 */
-    height: 400px;
-    /* margin: 30px 0; */
+
+
+.item {
+    overflow: hidden;
 }
 
+.item img {
+    opacity: 0.7;
+    vertical-align: top;
+    scale: 1;
+    transition: .5s;
+}
 
-.first-line-pic img,
-.second-line-pic img,
-.third-line-pic img {
-    /* 讓寬高去符合父層 */
+.item img:hover {
+    opacity: 1;
+    scale: 1.1;
+}
+
+.item img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-/* second二自己設定 */
-/* 用flex-grow練習 */
-.second-line-list,
-.third-line-list {
-    /* width: 0; */
-    display: flex;
-    justify-content: space-between;
-    height: 400px;
-    margin: 30px 0;
-
+.item1 {
+    grid-area: a;
+    width: 250px;
 }
 
-.pic1 {
-    flex: 0 0;
-    flex-basis: 250px;
+.item2 {
+    grid-area: b;
+    width: 300px;
 }
 
-.pic2 {
-    margin: 0 20px;
-    flex-grow: 3;
+.item3 {
+    grid-area: c;
+    width: 250px;
 }
 
-.pic3 {
-    flex-grow: 1;
-}
-
-/* 第三排圖片自己設定 */
-
-.third-pic1 {
-    flex: 0 0;
-    flex-basis: 450px;
-
+.item4 {
+    grid-area: d;
 
 }
 
-.third-pic2 {
-    flex-grow: 1;
-    margin: 0 20px;
+.item5 {
+    grid-area: e;
 }
 
-.third-pic4 {
-    flex-grow: 3;
+.item6 {
+    grid-area: f;
 }
+
+.item7 {
+    grid-area: g;
+}
+
+.item8 {
+    grid-area: h;
+}
+
+.item9 {
+    grid-area: i;
+}
+
+.item10 {
+    grid-area: j;
+}
+
 
 
 /* 新增文章區 */
@@ -105,14 +125,21 @@ body {
     height: 400px;
     /* 讓限定寬度的部分置中 */
     margin: 60px auto;
+    /* border: 2px solid #333; */
 
 }
 
 /* 包兩塊區域的外圍，flex橫排 */
 .article-info {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     border: 1px solid #276322;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+
     padding: 40px 0 30px 0;
 }
 
@@ -137,7 +164,11 @@ body {
     height: 300px;
 }
 
-
+.article-name,
+.article-content,
+.article-warning-txt {
+    font-size: 1rem;
+}
 
 
 .article-warning-txt {
@@ -184,6 +215,7 @@ body {
     /* 按鈕置中 */
     /* 一個div包button */
     margin: 10px auto;
+    text-align: center;
 }
 
 /* 全部資訊送出按鈕 */
@@ -199,105 +231,7 @@ body {
 
 
 
-/* 試用grid */
-.photo-wall {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* 照片牆的部份 */
-
-.photo-wall-title {
-    text-align: center;
-    font-size: 24px;
-    letter-spacing: 5px;
-    font-weight: 900;
-    margin: 100px 0 40px 0;
-    color: #276322;
-}
-
-.photogroup {
-    width: 800px;
-    height: auto;
-    margin-bottom: 50px;
-    display: grid;
-    gap: 10px 10px;
-
-
-    grid-template-areas:
-        "a b b c"
-        "d e e f"
-        "g h i j"
-    ;
-}
-
-
-
-.item {
-    overflow: hidden;
-}
-
-.item img {
-    opacity: 0.7;
-    vertical-align: top;
-    scale: 1;
-    transition: .5s;
-}
-
-.item img:hover {
-    opacity: 1;
-    scale: 1.1;
-}
-
-
-.item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item1 {
-    grid-area: a;
-}
-
-.item2 {
-    grid-area: b;
-}
-
-.item3 {
-    grid-area: c;
-}
-
-.item4 {
-    grid-area: d;
-
-}
-
-.item5 {
-    grid-area: e;
-}
-
-.item6 {
-    grid-area: f;
-}
-
-.item7 {
-    grid-area: g;
-}
-
-.item8 {
-    grid-area: h;
-}
-
-.item9 {
-    grid-area: i;
-}
-
-.item10 {
-    grid-area: j;
-}
+/* 照片牆RWD*/
 
 @media screen and (max-width:375px) {
 
