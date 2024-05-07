@@ -1,10 +1,8 @@
 body {
     font-size: 10px;
+    box-sizing: border-box;
 }
 
-.section {
-    padding: 100px auto;
-}
 
 .swiper-slide img {
     display: block;
@@ -30,7 +28,7 @@ body {
 }
 
 .about-list {
-    width: 75%;
+    /* width: 75%; */
     display: flex;
     /* border: 1px solid red; */
     justify-content: center;
@@ -84,14 +82,73 @@ body {
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:764px) {
     .about-txt .paragraph {
         width: 80vw;
         top: 0;
         right: 0;
         position: relative;
+        padding: 0;
+    }
+
+}
+
+@media screen and (min-width:765px) and (max-width: 810px) {
+    .about-txt {
+        width: 30%;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .about-txt h4 {
+        font-size: 16px;
+    }
+
+    .about-txt .paragraph {
+        width: 35vw;
+        top: 0;
+        right: 0;
+        position: relative;
+        padding: 0;
     }
 }
+
+@media screen and (min-width:811px) and (max-width: 940px) {
+    .about-txt {
+        width: 40%;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .about-txt .paragraph {
+        width: 40vw;
+        top: 0;
+        right: -20%;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 941px) and (max-width: 1199px) {
+    .about-txt {
+        width: 30%;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .about-txt .paragraph {
+        top: 0;
+        right: -20;
+        position: relative;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .about-txt .paragraph {
+        top: 40%;
+    }
+}
+
+
 
 .about-txt .paragraph p {
     padding: 10px 0;
@@ -100,7 +157,7 @@ body {
 }
 
 .about-pic {
-    flex-basis: 80%;
+    width: 500px;
 }
 
 .about-pic img {
@@ -127,7 +184,7 @@ body {
 
 .photogroup {
     width: 800px;
-    height: 1000px;
+    height: auto;
     margin-bottom: 50px;
     /* border: 3px solid #666; */
     display: grid;

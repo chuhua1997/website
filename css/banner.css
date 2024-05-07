@@ -6,21 +6,6 @@ body {
     font-size: 10px;
 }
 
-/* owl套件 */
-
-/* .owl-theme .item {
-    height: 10rem;
-    background: #4dc7a0;
-    padding: 1rem;
-}
-
-.owl-carousel .item h4 {
-    color: #fff;
-    font-weight: 400;
-    font-size: 1.4375rem;
-    margin-top: 0rem;
-} */
-
 .banner-section {
     height: 100%;
     /* 圖片跑上去的地方往下推 */
@@ -66,7 +51,7 @@ body {
     /* 文字定在圖上，子層在這，父層banner-pic */
     color: #333;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 7%;
     font-size: 24px;
     font-weight: 300;
@@ -84,44 +69,33 @@ body {
     vertical-align: bottom;
 }
 
-@media screen and (min-width: 865px) and (max-width: 1200px) {
-    .banner-title {
-        font-size: 65px;
-    }
-}
-
-@media screen and (min-width: 799px) and (max-width: 864px) {
-    .banner-title {
-        font-size: 55px;
-    }
-}
-
-@media screen and (min-width: 685px) and (max-width: 798px) {
+/* RWD設定  */
+@media screen and (min-width: 365px) and (max-width: 575px) {
     .banner-title {
         font-size: 45px;
     }
 }
 
-@media screen and (min-width: 575px) and (max-width: 684px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
     .banner-title {
         font-size: 35px;
     }
 }
 
-@media screen and (min-width: 456px) and (max-width: 574px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .banner-title {
-        font-size: 25px;
+        font-size: 55px;
     }
 }
 
-@media screen and (min-width: 332px) and (max-width: 455px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
     .banner-title {
-        font-size: 18px;
+        font-size: 64px;
     }
 }
 
-@media screen and (max-width: 332px) {
+@media screen and (min-width: 1200px) {
     .banner-title {
-        font-size: 0;
+        font-size: 80px;
     }
 }
