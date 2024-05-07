@@ -196,6 +196,15 @@
         <div class="right-reserve">本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用，絕無任何商業用途。</div>
     </footer>
     <!-- Swiper Js -->
+
+    <script>
+        $('#menu-switch').click(function () {
+            alert($('.nav-selector').hasClass('show-menu'))
+            $('.nav-selector').toggleClass('show-menu');
+
+            // $('.show-menu').toggle()
+        });
+    </script>
     <script src="./js/swiper-bundle.min.js"></script>
 
     <!-- Javascript -->
