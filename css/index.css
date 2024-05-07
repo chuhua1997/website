@@ -199,6 +199,25 @@ body {
     ;
 }
 
+
+
+.item {
+    overflow: hidden;
+}
+
+.item img {
+    opacity: 0.7;
+    vertical-align: top;
+    scale: 1;
+    transition: .5s;
+}
+
+.item img:hover {
+    opacity: 1;
+    scale: 1.1;
+}
+
+
 @media screen and (max-width:375px) {
 
     .photogroup {

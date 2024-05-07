@@ -4,35 +4,28 @@ body {
 
 /* ======關於我們介紹的部分======= */
 .aboutus {
-    width: 80%;
-    margin: 100px auto;
     display: flex;
     flex-direction: column;
 }
 
 .aboutus-container {
-    width: 100%;
+    width: 800px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 0 auto;
+
 }
 
 .aboutus-title h2 {
-    margin-left: 163px;
+    margin: 50px 0;
     font-size: 24px;
     letter-spacing: 3px;
     font-weight: 900;
-    /* color: #F5C173; */
+    text-align: center;
 }
 
-/* 
-@media screen and (min-width:1200px) {
-    .aboutus-title h2 {
-        margin: 0 auto;
-    }
-} */
-
 .aboutus-txt {
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
 }
 
 .aboutus-txt h4 {
@@ -42,7 +35,7 @@ body {
     /* 阻止文字斷行 */
     white-space: nowrap;
     line-height: 1.5;
-    margin-right: 50px;
+
 
 }
 
@@ -58,10 +51,11 @@ body {
 
 
 .aboutus-container .aboutus-pic {
-    margin: 5px 20px;
+    /* margin: 5px 20px; */
 }
 
 .aboutus-pic img {
+    width: 100%;
     height: 100%;
     vertical-align: bottom;
 }
@@ -69,7 +63,6 @@ body {
 
 /* =========服務項目的部分======= */
 .service-section {
-    width: 100%;
     margin: 100px auto;
     background-color: #FCFCE4;
 
@@ -87,7 +80,7 @@ body {
 
 
 .service-container {
-    width: 100%;
+    /* width: 100%; */
     margin: 20px 0;
     box-sizing: border-box;
     display: flex;
@@ -113,6 +106,7 @@ body {
 }
 
 .service-pic {
+    height: 100%;
     width: 200px;
     border-radius: 50%;
     overflow: hidden;
@@ -163,77 +157,43 @@ body {
     color: #fff;
 }
 
-@media screen and (max-width:413px) {
-    .service-list {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    .service-txt h5 {
-        margin: 0;
-    }
-
-    .service-txt p {
-        margin: 10px 0px;
-    }
-}
-
-@media screen and (max-width:592px) {
-    .service-txt p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width:721px) {
-    .service-list {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-
-}
-
-@media screen and (max-width:774px) {
-
+/* RWD設定 */
+@media screen and (min-width:575px) and (max-width: 779px) {
     .aboutus-container {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        width: auto;
+        /* display: flex;
+        justify-content: space-around; */
     }
 
     .aboutus-container .aboutus-pic {
-        margin: 0 auto;
-    }
-
-    .service-txt p {
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width:782px) {
-    .service-item {
-        margin: 20px 0px;
-    }
-
-    .service-title h2 {
-        padding: 20px 0;
-    }
-
-}
-
-
-
-@media screen and (min-width:782px) and (max-width: 829px) {
-    .aboutus-container .aboutus-pic {
-        margin: 0 15px 0 0;
+        padding-right: 10px;
     }
 
     .aboutus-txt {
-        margin: 0px;
+        padding-left: 10px;
+    }
+}
+
+/ @media screen and (min-width:765px) and (max-width: 992px) {
+    .aboutus-container {
+        width: auto;
     }
 
-    .aboutus-txt p {
-        letter-spacing: 2px;
+    .aboutus-container .aboutus-pic {
+        width: 40%;
+    }
+
+    .service-item {
+        width: 240px;
+        margin: 10px 0px;
+    }
+
+    .service-txt h5 {
+        margin: 10px 0px;
+    }
+
+    .service-txt p {
+        margin: 20px 0px;
     }
 }
