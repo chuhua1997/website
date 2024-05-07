@@ -25,6 +25,10 @@ body {
     .banner-pic {
         height: auto;
     }
+
+    .banner-words {
+        display: none;
+    }
 }
 
 .banner-title {
@@ -70,21 +74,50 @@ body {
 }
 
 /* RWD設定  */
-@media screen and (min-width: 365px) and (max-width: 575px) {
+@media screen and (max-width:374px) {
     .banner-title {
         font-size: 45px;
     }
-}
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
-    .banner-title {
-        font-size: 35px;
+    .banner-words {
+        display: none;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 375px) {
+    .banner-title {
+        display: none;
+
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:575px) {
     .banner-title {
         font-size: 55px;
+
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:575px) {
+    .banner-title {
+        font-size: 45px;
+
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 575px) {
+    .banner-title {
+        font-size: 55px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .banner-title {
+        font-size: 60px;
+    }
+
+    .banner-words {
+        font-size: 20px;
     }
 }
 

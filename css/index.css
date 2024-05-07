@@ -199,11 +199,48 @@ body {
     ;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:375px) {
+
     .photogroup {
         width: 100%;
+        grid-template-areas:
+            "a a "
+            "c d "
+            "e e "
+            "e e "
+            "b b"
+            "b b"
+            "f f"
+            "g h"
+        ;
     }
 }
+
+@media screen and (min-width:375px)and (max-width: 575px) {
+    .photogroup {
+        width: 100%;
+        grid-template-areas:
+            "a a "
+            "c d "
+            "e e "
+            "e e "
+            "b b"
+            "b b"
+            "f f"
+            "g h"
+        ;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 767px) {
+    .photogroup {
+        width: 576px;
+        height: auto;
+
+    }
+}
+
+
 
 .item img {
     width: 100%;

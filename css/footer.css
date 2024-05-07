@@ -109,13 +109,53 @@ footer {
     color: #fff;
     font-size: 12px;
     font-weight: 300;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 /* ===============RWD網頁設定================ */
+@media screen and (max-width:375px) {
+    .footer-info {
+        display: block;
+    }
 
+    .footer-logo {
+        width: 10%;
+        margin: 30px auto;
+    }
 
+    .footer-aboutus-title,
+    .footer-service-title {
+        font-size: 16px;
+    }
 
+    .footer-aboutus-item li,
+    .footer-service-item-info p,
+    .footer-service-item-buy p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 575px) {
+    .footer-info {
+        display: block;
+    }
+
+    .footer-logo {
+        width: 20%;
+        margin: 30px auto;
+    }
+
+    .footer-aboutus-title,
+    .footer-service-title {
+        font-size: 18px;
+    }
+
+    .footer-aboutus-item li,
+    .footer-service-item-info p,
+    .footer-service-item-buy p {
+        font-size: 16px;
+    }
+}
 
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
