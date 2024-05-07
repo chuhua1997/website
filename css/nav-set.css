@@ -95,11 +95,11 @@ h2 {
 
 } */
 
-.header-section .hb span {
+/* .header-section .hb span {
     width: 80%;
     height: 2px;
     background-color: #276322;
-}
+} */
 
 /* ========768px以上適用，大於768px，平板桌機時用============= */
 
@@ -118,20 +118,8 @@ h2 {
         width: 10%;
     }
 
-    /* 點下去會展開 */
-    .show-menu {
-        position: absolute;
-        top: 65px;
-        right: 30px;
-        display: block;
-        margin: 0px auto;
-        width: 30%;
-        height: 70%;
-        background-color: #fff
-    }
-
     /* 設定文字 */
-    .nav-selector li p {
+    /* .nav-selector li p {
         color: blue;
-    }
+    } */
 }
