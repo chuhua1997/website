@@ -107,6 +107,13 @@ h2 {
 @media screen and (max-width:768px) {
     .nav-selector {
         display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        transform: translateY(100%);
+        background-color: #fff;
     }
 
     .nav_hab {
@@ -115,7 +122,7 @@ h2 {
 
 
     .logo {
-        width: 10%;
+        width: 9%;
     }
 
     /* 設定文字 */
