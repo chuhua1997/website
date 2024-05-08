@@ -211,22 +211,16 @@ footer {
     }
 
     .footer-aboutus-title {
-        font-size: 20px;
-    }
-
-    .footer-aboutus-item li {
         font-size: 16px;
     }
 
-    .footer-service-title {
-        font-size: 20px;
+    .footer-aboutus-item li {
+        font-size: 12px;
     }
 
-    .footer-service-item-info p {
-        font-size: 20px;
-    }
-
+    .footer-service-title,
+    .footer-service-item-info p,
     .footer-service-item-buy p {
-        font-size: 20px;
+        font-size: 14px;
     }
 }
