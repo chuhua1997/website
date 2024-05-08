@@ -93,8 +93,11 @@ body {
 
 @media screen and (min-width: 375px) and (max-width:575px) {
     .banner-title {
-        font-size: 55px;
+        font-size: 45px;
+    }
 
+    .recommand-title {
+        font-size: 16px;
     }
 }
 
