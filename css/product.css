@@ -64,7 +64,7 @@ body {
 
 .product-info {
     border-bottom: 1px solid #333;
-    width: fit-content;
+    /* width: fit-content; */
     padding-top: 50px;
 }
 

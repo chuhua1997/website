@@ -54,7 +54,7 @@ body {
     letter-spacing: 2px;
     text-align: center;
     color: #fff;
-    background-color: #276322;
+    background-color: #C79A57;
     /* margin: 20px auto; */
     padding: 10px 30px;
     border-radius: 50px;
@@ -62,18 +62,10 @@ body {
     margin-bottom: 20px;
 }
 
-/* .line {
-    color: #276322;
-} */
-
-/* 畫一條間格線 */
-/* 空的div有border可能看不見，所以加寬高 */
-/* .line {
-    border: 1px solid #276322;
-    margin: 0 10px;
-    height: 1px;
-    width: fit-content;
-} */
+.btn-buy:hover {
+    color: #fff;
+    background-color: #783e19;
+}
 
 .info-title {
     margin: 20px 0;

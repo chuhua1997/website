@@ -53,6 +53,30 @@ select {
     font-size: 1rem;
 }
 
+/* 呼叫推薦 */
+/* 置中按鈕 */
+.btn-position{
+    text-align: center;
+}
+.recommendPlant{
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin: 5px 0;
+    text-align: center;
+    color: #276322;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 1px solid #276322;
+}
+.recommendPlant:hover{
+    text-align: center;
+    color: #fff;
+    background-color: #276322;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
 /*============ 下方送出資料按鈕======== */
 .recommand-btn {
     text-align: center;

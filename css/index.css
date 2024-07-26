@@ -15,6 +15,10 @@ body {
     --swiper-navigation-color: #fff;
 }
 
+.swiper-pagination-bullet {
+    color: #fff;
+}
+
 .about-container {
     width: 80%;
     /* border: 1px solid red; */
@@ -271,7 +275,7 @@ body {
     text-decoration: none;
     text-align: center;
     color: #fff;
-    background-color: #9e6914;
+    background-color: #C79A57;
     padding: 10px 30px;
     border-radius: 50px;
 }

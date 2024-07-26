@@ -90,14 +90,15 @@
                 <div class="recommand-select">
                     <div class="what-space">
                         <label for="space">你家的空間</label>
+                        <!-- 用來做js選取元素 -->
                         <select name="space" id="space">
                             <option value="5坪以內">5坪以內</option>
                             <option value="10坪以內">10坪以內</option>
-                            <option value="15坪以內">15坪以內</option>
                         </select>
                     </div>
                     <div class="what-color">
                         <label for="color">喜歡植物的顏色</label>
+                        <!-- 用來做js選取元素 -->
                         <select name="color" id="color">
                             <option value="深綠色">深綠色</option>
                             <option value="淺綠色">淺綠色</option>
@@ -105,21 +106,27 @@
                     </div>
                     <div class="what-care">
                         <label for="care">澆水的頻率(週)</label>
-                        <select name="space" id="care">
+                        <!-- 用來做js選取元素 -->
+                        <select name="space" id="water">
                             <option value="不常澆">不常澆</option>
                             <option value="隨時保持濕潤">隨時保持濕潤</option>
                         </select>
                     </div>
                     <div class="what-leave-shape">
                         <label for="leave-shape">葉子形狀選擇</label>
+                        <!-- 用來做js選取元素 -->
                         <select name="leave-shape" id="leave-shape">
                             <option value="圓形及橢圓形">圓形及橢圓形</option>
                             <option value="細長型">細長型</option>
                         </select>
                     </div>
+                    <div class="btn-position">
+                        <button class="btn recommendPlant" type="button" onclick="recommendPlant()">推薦植物</button>
+                    </div>
+
                 </div>
                 <div class="recommand-show">
-                    <div class="show-pic"></div>
+                    <div class="show-pic" id="plantRecommendation"></div>
                 </div>
             </div>
             <div class="btn recommand-btn">
@@ -129,7 +136,7 @@
     </section>
 
 
-    <footer class="section end-info">
+    <!-- <footer class="section end-info">
         <div class="section footer-info">
             <div class="footer-logo"><a href="./index.html"><img src="pic/footer-logo.png" alt=""></a></div>
             <div class="footer-aboutus">
@@ -163,7 +170,183 @@
             </div>
         </div>
         <div class="right-reserve">本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用，絕無任何商業用途。</div>
-    </footer>
+    </footer> -->
+    <script>
+        //會顯示的植物圖片和名字陣列
+        const plants = {
+            '龜背芋': {
+                name: '龜背芋',
+                image: 'pic/recommand/龜背芋.jpg'
+            },
+            '琴葉榕': {
+                name: '琴葉榕',
+                image: 'pic/recommand/琴葉榕.jpg'
+            },
+            '尤加利葉': {
+                name: '尤加利葉',
+                image: 'pic/recommand/尤加利葉.jpg'
+            },
+            '鳥巢蕨': {
+                name: '鳥巢蕨',
+                image: 'pic/recommand/鳥巢蕨.jpg'
+            },
+            '綠蘿': {
+                name: '綠蘿',
+                image: 'pic/recommand/綠蘿.jpg'
+            },
+            '龍血樹': {
+                name: '龍血樹',
+                image: 'pic/recommand/龍血樹.jpg'
+            },
+            '蘆薈': {
+                name: '蘆薈',
+                image: 'pic/recommand/蘆薈.jpg'
+            },
+            '合果芋': {
+                name: '合果芋',
+                image: 'pic/recommand/合果芋.jpg'
+            },
+            '波士頓蕨': {
+                name: '波士頓蕨',
+                image: 'pic/recommand/波士頓蕨.jpg'
+            },
+            '龍舌蘭': {
+                name: '龍舌蘭',
+                image: 'pic/recommand/龍舌蘭.jpg'
+            },
+            '吊蘭': {
+                name: '吊蘭',
+                image: 'pic/recommand/吊蘭.jpg'
+            },
+            '虎尾蘭': {
+                name: '虎尾蘭',
+                image: 'pic/recommand/虎尾蘭.jpg'
+            }
+        };
+
+        function recommendPlant() {
+            // 獲取表單中的值
+            let space = document.getElementById('space').value;
+            let color = document.getElementById('color').value;
+            let water = document.getElementById('water').value;
+            let leaveShape = document.getElementById('leave-shape').value;
+            let selectedPlant = '';//最終選擇的植物，這個變數儲存因為選擇而出現的推薦植物
+            switch (space) {
+                case '5坪以內':
+                    switch (color) {
+                        case '深綠色':
+                            switch (water) {
+                                case '不常澆':
+                                    switch (leaveShape) {
+                                        case '圓形及橢圓形':
+                                            selectedPlant = '琴葉榕';
+                                            break;
+                                        case '細長型':
+                                            selectedPlant = '綠蘿';
+                                            break;
+                                    }
+                                case '隨時保持濕潤':
+                                    switch (leaveShape) {
+                                        case '圓形及橢圓形':
+                                            selectedPlant = '龜背芋';
+                                            break;
+                                        case '細長型':
+                                            selectedPlant = '鳥巢蕨';
+                                            break;
+                                    }
+                                    break;
+                            }
+                        case '淺綠色':
+                            switch (water) {
+                                case '不常澆':
+                                    switch (leaveShape) {
+                                        case '圓形及橢圓形':
+                                            selectedPlant = '龍血樹';
+                                            break;
+                                        case '細長型':
+                                            selectedPlant = '蘆薈';
+                                            break;
+                                    }
+                                case '隨時保持濕潤':
+                                    switch (leaveShape) {
+                                        case '圓形及橢圓形':
+                                            selectedPlant = '合果芋';
+                                            break;
+                                        case '細長型':
+                                            selectedPlant = '波士頓蕨';
+                                            break;
+                                    }
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
+                case '10坪以內':
+                    switch (color) {
+                        case '深綠色':
+                            switch (water) {
+                                case '不常澆':
+                                    switch (leaveShape) {
+                                        case '圓形及橢圓形':
+                                            selectedPlant = '琴葉榕';
+                                            break;
+                                        case '細長型':
+                                            selectedPlant = '鳥巢蕨';
+                                            break;
+                                    }
+                                case '隨時保持濕潤':
+                                    switch (leaveShape) {
+                                        case '圓形及橢圓形':
+                                            selectedPlant = '琴葉榕';
+                                            break;
+                                        case '細長型':
+                                            selectedPlant = '尤加利葉';
+                                            break;
+                                    }
+                                    break;
+                            }
+                        case '淺綠色':
+                            switch (water) {
+                                case '不常澆':
+                                    switch (leaveShape) {
+                                        case '圓形及橢圓形':
+                                            selectedPlant = '龍血樹';
+                                            break;
+                                        case '細長型':
+                                            selectedPlant = '龍舌蘭';
+                                            break;
+                                    }
+                                case '隨時保持濕潤':
+                                    switch (leaveShape) {
+                                        case '圓形及橢圓形':
+                                            selectedPlant = '吊蘭';
+                                            break;
+                                        case '細長型':
+                                            selectedPlant = '虎尾蘭';
+                                            break;
+                                    }
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
+                default:
+                    selectedPlant = '沒有匹配到的植物';
+                    break;
+            }
+            //用中括號動態存取放入的值
+            if (selectedPlant && plants[selectedPlant]) {
+                let plantInfo = plants[selectedPlant];
+                document.getElementById('plantRecommendation').innerHTML = `
+                <h4>推薦植物:${plantInfo.name}</h4>
+                <img src="${plantInfo.image}" alt="${plantInfo.name}"width="200" height="200">`;
+            } else {
+                document.getElementById('plantRecommendation').innerHTML = '<p>未找到符合條件的植物</p>';
+            }
+
+
+        }
+    </script>
 
 
 
