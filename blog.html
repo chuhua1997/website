@@ -21,7 +21,7 @@
     <!-- banner css檔 -->
     <link rel="stylesheet" href="./css/banner.css">
 
-    <!-- footer檔案 -->
+    <!-- footer css檔案 -->
     <link rel="stylesheet" href="./css/footer.css">
     <!-- inter文字檔案 -->
     <link
@@ -36,6 +36,13 @@
     <!-- 上傳圖片的icon -->
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'>
     </link>
+
+    <!-- maginific-popup css cdn js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css">
+
+
+    <!-- sweetalert2 彈窗 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
 
     <!-- swiper-jQuery -->
     <link rel="stylesheet" href="./js/swiper-jQuery.js">
@@ -91,19 +98,120 @@
             <div class="photo-wall-title">
                 <h2>一起養</h2>
             </div>
-            <div class="phovvto-wall">
+            <div class="photoWall">
                 <div class="photogroup">
-                    <div class="item item1"><img src="pic/oneplant.jpg" alt=""></div>
-                    <div class="item item2"><img src="pic/next-sea.jpg" alt=""></div>
-                    <div class="item item3"><img src="pic/shadow.jpg" alt=""></div>
-                    <div class="item item4"><img src="pic/photo-wall-d.jpg" alt=""></div>
-                    <div class="item item5"><img src="pic/photo-wall-e.jpg" alt=""></div>
-                    <div class="item item6"><img src="pic/sunrise.jpg" alt=""></div>
-                    <div class="item item7"><img src="pic/photo-wall-g.jpg" alt=""></div>
-                    <div class="item item8"><img src="pic/photo-wall-h.jpg" alt=""></div>
-                    <div class="item item9"><img src="pic/bigplant.jpg" alt=""></div>
-                    <div class="item item10"><img src="pic/nextwall.png" alt=""></div>
+                    <div class="item item1"><a href="pic/oneplant.jpg""><img src=" pic/oneplant.jpg" alt=""></a></div>
+                    <div class="item item2"><a href="pic/next-sea.jpg"><img src="pic/next-sea.jpg" alt=""></a></div>
+                    <div class="item item3"><a href="pic/shadow.jpg"><img src="pic/shadow.jpg" alt=""></a></div>
+                    <div class="item item5"><a href="pic/photo-wall-e.jpg"><img src="pic/photo-wall-e.jpg" alt=""></a>
+                    </div>
+                    <div class="item item4"><a href="pic/photo-wall-d.jpg"><img src="pic/photo-wall-d.jpg" alt=""></a>
+                    </div>
+                    <div class="item item6"><a href="pic/sunrise.jpg"><img src="pic/sunrise.jpg" alt=""></a></div>
+                    <div class="item item7"><a href="pic/photo-wall-g.jpg"><img src="pic/photo-wall-g.jpg" alt=""></a>
+                    </div>
+                    <div class="item item8"><a href="pic/photo-wall-h.jpg"><img src="pic/photo-wall-h.jpg" alt=""></a>
+                    </div>
+                    <div class="item item9"><a href="pic/bigplant.jpg"><img src="pic/bigplant.jpg" alt=""></a></div>
+                    <div class="item item10"><a href="pic/nextwall.png"><img src="pic/nextwall.png" alt=""></a></div>
                 </div>
+            </div>
+            <!-- 彈窗出現的燈箱 -->
+            <!-- <section class="popup-content">
+                <div class="popup-container">
+                    <div class="popup-item">
+                        <a href="" class="popup-pic">
+                            <img src="pic/oneplant.jpg" alt="">
+                        </a>
+                        <div class="pop-text">
+                            <h3>多了一盆植物</h3>
+                            <p>花錢買了一盆植物，放在房間，看著生氣蓬勃的綠葉，每天心情感覺就很開心。</p>
+                        </div>
+                    </div>
+                    <div class="popup-item">
+                        <a href="" class="popup-pic">
+                            <img src="pic/next-sea.jpg" alt="">
+                        </a>
+                        <div class="pop-text">
+                            <h3>多了一盆植物</h3>
+                            <p>花錢買了一盆植物，放在房間，看著生氣蓬勃的綠葉，每天心情感覺就很開心。</p>
+                        </div>
+                    </div>
+                    <div class="popup-item">
+                        <a href="" class="popup-pic">
+                            <img src="pic/shadow.jpg" alt="">
+                        </a>
+                        <div class="pop-text">
+                            <h3>多了一盆植物</h3>
+                            <p>花錢買了一盆植物，放在房間，看著生氣蓬勃的綠葉，每天心情感覺就很開心。</p>
+                        </div>
+                    </div>
+                    <div class="popup-item">
+                        <a href="" class="popup-pic">
+                            <img src="pic/photo-wall-d.jpg" alt="">
+                        </a>
+                        <div class="pop-text">
+                            <h3>多了一盆植物</h3>
+                            <p>花錢買了一盆植物，放在房間，看著生氣蓬勃的綠葉，每天心情感覺就很開心。</p>
+                        </div>
+                    </div>
+                    <div class="popup-item">
+                        <a href="" class="popup-pic">
+                            <img src="pic/photo-wall-e.jpg" alt="">
+                        </a>
+                        <div class="pop-text">
+                            <h3>多了一盆植物</h3>
+                            <p>花錢買了一盆植物，放在房間，看著生氣蓬勃的綠葉，每天心情感覺就很開心。</p>
+                        </div>
+                    </div>
+                    <div class="popup-item">
+                        <a href="" class="popup-pic">
+                            <img src="pic/sunrise.jpg" alt="">
+                        </a>
+                        <div class="pop-text">
+                            <h3>多了一盆植物</h3>
+                            <p>花錢買了一盆植物，放在房間，看著生氣蓬勃的綠葉，每天心情感覺就很開心。</p>
+                        </div>
+                    </div>
+                    <div class="popup-item">
+                        <a href="" class="popup-pic">
+                            <img src="pic/photo-wall-g.jpg" alt="">
+                        </a>
+                        <div class="pop-text">
+                            <h3>多了一盆植物</h3>
+                            <p>花錢買了一盆植物，放在房間，看著生氣蓬勃的綠葉，每天心情感覺就很開心。</p>
+                        </div>
+                    </div>
+                    <div class="popup-item">
+                        <a href="" class="popup-pic">
+                            <img src="pic/photo-wall-h.jpg" alt="">
+                        </a>
+                        <div class="pop-text">
+                            <h3>多了一盆植物</h3>
+                            <p>花錢買了一盆植物，放在房間，看著生氣蓬勃的綠葉，每天心情感覺就很開心。</p>
+                        </div>
+                    </div>
+                    <div class="popup-item">
+                        <a href="" class="popup-pic">
+                            <img src="pic/bigplant.jpg" alt="">
+                        </a>
+                        <div class="pop-text">
+                            <h3>多了一盆植物</h3>
+                            <p>花錢買了一盆植物，放在房間，看著生氣蓬勃的綠葉，每天心情感覺就很開心。</p>
+                        </div>
+                    </div>
+                    <div class="popup-item">
+                        <a href="" class="popup-pic">
+                            <img src="pic/nextwall.png" alt="">
+                        </a>
+                        <div class="pop-text">
+                            <h3>多了一盆植物</h3>
+                            <p>花錢買了一盆植物，放在房間，看著生氣蓬勃的綠葉，每天心情感覺就很開心。</p>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
         </section>
         <section class="section new-article">
             <div class="blog-article-container">
@@ -192,8 +300,24 @@
     </footer>
 
 
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <!-- magnific popup js cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            //Magnific Popup 需要 a 標籤來觸發彈窗
+            $('.photoWall').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                photoWall: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
