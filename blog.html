@@ -49,7 +49,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <!-- 漢堡點按出現下拉選單的js -->
     <script src="./js/nav-set.js"></script>
-
 </head>
 
 <body>
@@ -100,7 +99,7 @@
             </div>
             <div class="photoWall">
                 <div class="photogroup">
-                    <div class="item item1"><a href="pic/oneplant.jpg""><img src=" pic/oneplant.jpg" alt=""></a></div>
+                    <div class="item item1"><a href="pic/oneplant.jpg"><img src=" pic/oneplant.jpg" alt=""></a></div>
                     <div class="item item2"><a href="pic/next-sea.jpg"><img src="pic/next-sea.jpg" alt=""></a></div>
                     <div class="item item3"><a href="pic/shadow.jpg"><img src="pic/shadow.jpg" alt=""></a></div>
                     <div class="item item5"><a href="pic/photo-wall-e.jpg"><img src="pic/photo-wall-e.jpg" alt=""></a>
@@ -312,12 +311,13 @@
             $('.photoWall').magnificPopup({
                 delegate: 'a',
                 type: 'image',
-                photoWall: {
+                gallery: {
                     enabled: true
                 }
             });
         });
     </script>
+
 </body>
 
 </html>
