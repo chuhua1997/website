@@ -45,6 +45,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <!-- 漢堡點按出現下拉選單的js -->
     <script src="./js/nav-set.js"></script>
+
+    <!-- maginific-popup css cdn js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css">
 </head>
 
 <body>
@@ -92,8 +95,6 @@
                 <div class="pre-img swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
-            <!-- 大圖 -->
-            <!-- <img src="pic/home.jpg" alt=""> -->
         </div>
         <!-- banner區塊 -->
         <div class="banner-txt">
@@ -130,16 +131,23 @@
             <div class="photo-wall-title">
                 <h2>一起養</h2>
             </div>
-            <div class="photo-wall">
+            <div class="photoWall">
                 <div class="photogroup">
-                    <div class="item item1"><img src="pic/photo-wall-a.jpg" alt=""></div>
-                    <div class="item item2"><img src="pic/photo-wall-b.jpg" alt=""></div>
-                    <div class="item item3"><img src="pic/photo-wall-c.jpg" alt=""></div>
-                    <div class="item item4"><img src="pic/photo-wall-d.jpg" alt=""></div>
-                    <div class="item item5"><img src="pic/photo-wall-e.jpg" alt=""></div>
-                    <div class="item item6"><img src="pic/photo-wall-f.jpg" alt=""></div>
-                    <div class="item item7"><img src="pic/photo-wall-g.jpg" alt=""></div>
-                    <div class="item item8"><img src="pic/photo-wall-h.jpg" alt=""></div>
+                    <div class="item item1"><a href="pic/photo-wall-a.png"><img src=" pic/photo-wall-a.png" alt=""></a>
+                    </div>
+                    <div class="item item2"><a href="pic/next-sea.jpg"><img src="pic/next-sea.jpg" alt=""></a></div>
+                    <div class="item item3"><a href="pic/shadow.jpg"><img src="pic/shadow.jpg" alt=""></a></div>
+                    <div class="item item5"><a href="pic/photo-wall-e.jpg"><img src="pic/photo-wall-e.jpg" alt=""></a>
+                    </div>
+                    <div class="item item4"><a href="pic/photo-wall-d.jpg"><img src="pic/photo-wall-d.jpg" alt=""></a>
+                    </div>
+                    <div class="item item6"><a href="pic/sunrise.jpg"><img src="pic/sunrise.jpg" alt=""></a></div>
+                    <div class="item item7"><a href="pic/photo-wall-g.jpg"><img src="pic/photo-wall-g.jpg" alt=""></a>
+                    </div>
+                    <div class="item item8"><a href="pic/photo-wall-h.jpg"><img src="pic/photo-wall-h.jpg" alt=""></a>
+                    </div>
+                    <div class="item item9"><a href="pic/bigplant.jpg"><img src="pic/bigplant.jpg" alt=""></a></div>
+                    <div class="item item10"><a href="pic/nextwall.png"><img src="pic/nextwall.png" alt=""></a></div>
                 </div>
                 <div class="go-to-product">
                     <div class="btn product-btn"><a href="product.html">馬上選</a>
@@ -190,6 +198,25 @@
 
     <!-- Javascript -->
     <script src="./js/script.js"></script>
+
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- magnific popup js cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- 彈窗jQuery -->
+    <script>
+        $(document).ready(function () {
+            $('.photogroup').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {//相冊功能
+                    enabled: true
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
