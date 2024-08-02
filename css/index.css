@@ -254,11 +254,6 @@ body {
 }
 
 .item1 {
-    /* 放背景圖 */
-    /* ../ 先離開自己的檔案 */
-    /* 跑進/pic檔案裡 */
-    /* 裡面的圖片/檔案.正確的副檔名 */
-    /* background-image: url("../pic/photo-wall-a.png"); */
     grid-area: a;
 }
 
@@ -339,6 +334,7 @@ body {
             "b b"
             "f f"
             "g h"
+            "i"
         ;
     }
 }

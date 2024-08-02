@@ -89,13 +89,13 @@ body {
     grid-area: h;
 }
 
-.item9 {
+/* .item9 {
     grid-area: i;
 }
 
 .item10 {
     grid-area: j;
-}
+} */
 
 
 
@@ -115,12 +115,9 @@ body {
 
 
 .blog-article-container {
-    width: 800px;
-    height: 400px;
-    /* 讓限定寬度的部分置中 */
-    margin: 60px auto;
-    /* border: 2px solid #333; */
-
+    max-width: 800px;
+    /* 上傳區內容框置中 */
+    margin: 0 auto;
 }
 
 /* 包兩塊區域的外圍，flex橫排 */
@@ -133,8 +130,7 @@ body {
 .content-wrapper {
     display: flex;
     justify-content: space-evenly;
-
-    padding: 40px 0 30px 0;
+    padding: 40px 0 0px 0;
 }
 
 /* 打文章的部分 */
@@ -154,8 +150,8 @@ body {
     flex-direction: column;
     justify-content: center;
     border: 1px solid #276322;
-    width: 350px;
-    height: 300px;
+    min-width: 350px;
+    min-height: 300px;
 }
 
 .article-name,
@@ -244,6 +240,26 @@ body {
     }
 }
 
+@media screen and (max-width:575px){
+    /* 讓上傳文章區成垂直排列 */
+    .content-wrapper{
+        display:block;
+    }
+    /* 文章文字部分置中 */
+    .article-title {
+        text-align: center;
+    }
+    .article-name-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .article-direction-content {
+        margin: 0;
+        text-align:center;
+    }
+}
+
 @media screen and (min-width:375px)and (max-width: 575px) {
     .photogroup {
         width: 100%;
@@ -264,6 +280,5 @@ body {
     .photogroup {
         width: 576px;
         height: auto;
-
     }
 }
