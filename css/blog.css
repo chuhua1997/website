@@ -26,7 +26,7 @@ body {
     display: grid;
     gap: 10px 10px;
     grid-template-areas:
-        "a b b c"
+        "a a b c"
         "d e e f"
         "g h i j"
     ;
@@ -58,17 +58,14 @@ body {
 
 .item1 {
     grid-area: a;
-    width: 250px;
 }
 
 .item2 {
     grid-area: b;
-    width: 300px;
 }
 
 .item3 {
     grid-area: c;
-    width: 250px;
 }
 
 .item4 {

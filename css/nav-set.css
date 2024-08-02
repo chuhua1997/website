@@ -1,24 +1,20 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: "Inter", sans-serif;
     font-size: 10px;
 }
-
 /* header那塊 */
 .logo {
     width: 3%;
     padding: 5px 0;
     cursor: pointer;
 }
-
 .logo img {
     width: 100%;
     vertical-align: middle;
 }
-
 /* ============給每個區塊標題文字先預設========== */
 h2 {
     color: #783e19;
@@ -27,9 +23,6 @@ h2 {
     font-weight: 900;
     margin: 15px 0;
 }
-
-
-
 .header-section {
     /* 壓縮可能會不見 */
     min-width: 60px;
@@ -46,22 +39,18 @@ h2 {
     padding: 0 30px;
     background-color: #fff;
 }
-
 /*導航列的連結區塊橫排，裝連結的ul*/
 .nav-selector {
     display: flex;
 }
 /* 導航列的連結區塊裡的a標籤 */
-.nav-selector li:first-child{
-    margin-top:10px;
-}
+
 .nav-selector li a {
     display:block;
     padding: 15px;
     text-decoration: none;
     color: #101010;
     font-size: 16px;
-
 }
 
 .nav-selector li a:hover {
@@ -90,19 +79,14 @@ h2 {
         transform: translateY(100%);
         background-color: #fff;
     }
-
+    .nav-selector li{
+        margin-top:10px;
+    }
     .nav_hab {
         display: block;
         font-size: 35px;
     }
-
-
     .logo {
         width: 9%;
     }
-
-    /* 設定文字 */
-    /* .nav-selector li p {
-        color: blue;
-    } */
 }
