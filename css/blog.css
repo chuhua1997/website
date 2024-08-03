@@ -150,8 +150,8 @@ body {
     flex-direction: column;
     justify-content: center;
     border: 1px solid #276322;
-    min-width: 350px;
     min-height: 300px;
+    padding:0 10%;
 }
 
 .article-name,
@@ -273,6 +273,11 @@ body {
             "f f"
             "g h"
         ;
+    }
+}
+@media screen and (min-width:576px){
+    .article-upload-border{
+        width:300px;
     }
 }
 
