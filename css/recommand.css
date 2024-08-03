@@ -40,6 +40,10 @@ body {
 .recommand-show {
     border: 1px solid #333;
 }
+/* 顯示推薦時不顯示框線 */
+.hide-border {
+    border: none; 
+}
 
 label {
     display: block;
@@ -52,6 +56,21 @@ select {
     margin: 10px 0 20px 0;
     font-size: 1rem;
 }
+
+
+.pic-wrapper{
+    border:1px solid #276322;
+    height:auto;
+    
+}
+
+img{
+    width:100%;
+    height:auto;
+    max-height: 280px;
+}
+
+
 
 /* 呼叫推薦 */
 /* 置中按鈕 */

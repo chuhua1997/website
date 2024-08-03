@@ -123,7 +123,6 @@
                     <div class="btn-position">
                         <button class="btn recommendPlant" type="button" onclick="recommendPlant()">推薦植物</button>
                     </div>
-
                 </div>
                 <div class="recommand-show">
                     <div class="show-pic" id="plantRecommendation"></div>
@@ -335,13 +334,20 @@
                     break;
             }
             //用中括號動態存取放入的值
+            // 多包一層圖片做框內設定
             if (selectedPlant && plants[selectedPlant]) {
                 let plantInfo = plants[selectedPlant];
                 document.getElementById('plantRecommendation').innerHTML = `
                 <h4>推薦植物:${plantInfo.name}</h4>
-                <img src="${plantInfo.image}" alt="${plantInfo.name}"width="200" height="200">`;
+                <div class="pic-wrapper">
+                    <img src="${plantInfo.image}" alt="${plantInfo.name}"width="200" height="200">
+                </div>`;
+                // 不顯示原本圖片會顯示位置的邊框
+                document.querySelector('.recommand-show').classList.add('hide-border');
             } else {
                 document.getElementById('plantRecommendation').innerHTML = '<p>未找到符合條件的植物</p>';
+                // 沒有推薦植物時還是顯示位置的邊框
+                documnet.querySelector('.recommand-show').classList.remove('hide-border');
             }
         }
     </script>
