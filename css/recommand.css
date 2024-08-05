@@ -1,7 +1,9 @@
 body {
     font-size: 10px;
 }
-
+/* .banner-pic {
+    height: 50vw;
+} */
 /* 微調描述文字 */
 .banner-words {
     /* 文字定在圖上，子層在這，父層banner-pic */
@@ -14,7 +16,6 @@ body {
     width: 60%;
     margin: 80px auto;
     padding: 30px;
-    /* border: 1px solid #333; */
 }
 
 .recommand-title {
@@ -57,6 +58,11 @@ select {
     font-size: 1rem;
 }
 
+/* 推薦植物名稱設定 */
+h4{
+    font-size:20px;
+    text-align: center;
+}
 
 .pic-wrapper{
     border:1px solid #276322;
@@ -64,10 +70,13 @@ select {
     
 }
 
-img{
+/* 推薦植物的圖片設定 */
+.pic-wrapper img{
     width:100%;
     height:auto;
     max-height: 280px;
+    /* 原 inline，故重設對準父層基準線 */
+    vertical-align: middle;
 }
 
 

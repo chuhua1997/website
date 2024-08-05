@@ -14,11 +14,20 @@ body {
 
 /* banner slogan文字 */
 .banner-pic {
-    height: 40vw;
     width: 100%;
+    height: 500px;
     /* 文字定在圖上，他的父層 */
     position: relative;
-    /* border: 1px solid blue; */
+}
+
+/* 推薦植物的名稱 */
+h4{
+    margin-bottom: 2%;
+}
+/* 前往商品頁面 */
+a {
+    text-decoration: none;
+    color:#276322;
 }
 
 @media screen and (max-width:768px) {
@@ -45,13 +54,11 @@ body {
     /* 會被圖蓋住 */
     /* 讓放在圖片上的文字顯眼一些 */
     text-shadow: 2px 2px 9px #333;
-    /* border: 1px solid green; */
 }
 
 
 /* 下面敘述文字才有 */
 .banner-words {
-    /* border: 1px solid red; */
     /* 文字定在圖上，子層在這，父層banner-pic */
     color: #333;
     position: absolute;

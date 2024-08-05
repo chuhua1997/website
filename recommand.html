@@ -129,7 +129,7 @@
                 </div>
             </div>
             <div class="btn recommand-btn">
-                <button class="recommand-btn-submit">跳到商品頁面</button>
+                <a href="./product.html"><button class="recommand-btn-submit">跳到商品頁面</button></a>
             </div>
         </div>
     </section>
@@ -338,7 +338,7 @@
             if (selectedPlant && plants[selectedPlant]) {
                 let plantInfo = plants[selectedPlant];
                 document.getElementById('plantRecommendation').innerHTML = `
-                <h4>推薦植物:${plantInfo.name}</h4>
+                <h4>${plantInfo.name}</h4>
                 <div class="pic-wrapper">
                     <img src="${plantInfo.image}" alt="${plantInfo.name}"width="200" height="200">
                 </div>`;
