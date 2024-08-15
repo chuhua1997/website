@@ -10,8 +10,11 @@ body {
 }
 
 /* Swiper箭頭，找到可用class的變數名稱，設在父層可修改掉 */
+
 .swiper {
     --swiper-navigation-color: #fff;
+    /* 因為是relative設定位置，要給一個限制高度，避免下方圖片擠壓 */
+    height:500px;
 }
 
 .swiper-pagination-bullet {
@@ -31,9 +34,7 @@ body {
 }
 
 .about-list {
-    /* width: 75%; */
     display: flex;
-    /* border: 1px solid red; */
     justify-content: center;
     align-content: center;
     margin: 100px auto;
