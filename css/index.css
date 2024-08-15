@@ -14,7 +14,7 @@ body {
 .swiper {
     --swiper-navigation-color: #fff;
     /* 因為是relative設定位置，要給一個限制高度，避免下方圖片擠壓 */
-    height:500px;
+    height:450px;
 }
 
 .swiper-pagination-bullet {
