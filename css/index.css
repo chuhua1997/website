@@ -3,6 +3,12 @@ body {
     box-sizing: border-box;
 }
 
+.banner-pic {
+    width: 100%;
+    /* 文字定在圖上，他的父層 */
+    position: relative;
+}
+
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -13,8 +19,6 @@ body {
 
 .swiper {
     --swiper-navigation-color: #fff;
-    /* 因為是relative設定位置，要給一個限制高度，避免下方圖片擠壓 */
-    height:450px;
 }
 
 .swiper-pagination-bullet {
@@ -354,7 +358,8 @@ body {
     margin-right: initial;
     width: 70%;
     /* 以視窗放大，超出的遮起來，改圖片不一樣大 */
-    height: 45vw;
+    /* 因為是relative設定位置，要給一個限制高度，避免下方圖片擠壓 */
+    height: 450px;
     overflow: hidden;
 }
 
