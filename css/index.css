@@ -359,7 +359,7 @@ body {
     width: 70%;
     /* 以視窗放大，超出的遮起來，改圖片不一樣大 */
     /* 因為是relative設定位置，要給一個限制高度，避免下方圖片擠壓 */
-    height: 450px;
+    height: 500px;
     overflow: hidden;
 }
 
